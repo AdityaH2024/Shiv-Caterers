@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Shiv Caterers — Pure Veg Catering Pune</title>
+  <meta name="description" content="Contact Shiv Caterers Pune for vegetarian catering inquiries. Call Kashiram Supekar on 9130192121 or WhatsApp for weddings, birthday parties, munj & all events." />
+  <meta name="keywords" content="contact Shiv Caterers, catering inquiry Pune, vegetarian caterer contact, Kashiram Supekar phone" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://shivcaterers.in/contact.html" />
+  <meta property="og:title" content="Contact Shiv Caterers — Pure Veg Catering Pune" />
+  <meta property="og:description" content="Get in touch for catering quotes, menu discussions and bookings across Pune and PCMC." />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Shiv Caterers","telephone":["+919130192121","+918308041799"],"email":"shivcaterers2121@gmail.com","openingHours":"Mo-Su 08:00-21:00","address":[{"@type":"PostalAddress","streetAddress":"Dnyandeep Colony, Dagdoba Chowk, Chinchwadnagar","addressLocality":"Chinchwad, Pune","addressRegion":"Maharashtra","postalCode":"411033","addressCountry":"IN"},{"@type":"PostalAddress","streetAddress":"Near Kohinur Grand, Mukai Chowk","addressLocality":"Ravet","addressRegion":"Maharashtra","postalCode":"412101","addressCountry":"IN"}]}</script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── CONTACT SHELL ── */
+    .contact-body { background: var(--cream); padding: 4rem 5% 6rem; }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1.5fr;
+      gap: 2.5rem; max-width: 1100px; margin: 0 auto;
+      align-items: start;
+    }
+
+    /* ── LEFT PANEL ── */
+    .contact-info { display: flex; flex-direction: column; gap: 1.25rem; }
+
+    .info-intro {
+      background: var(--white); border: 1px solid var(--cream-3);
+      border-radius: var(--r-md); padding: 2rem;
+    }
+    .info-intro h2 { font-size: 1.5rem; margin-bottom: 0.6rem; }
+    .info-intro p  { font-size: 0.86rem; line-height: 1.75; }
+
+    /* Quick-action cards */
+    .quick-actions { display: flex; flex-direction: column; gap: 0.6rem; }
+    .quick-action {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1.1rem 1.3rem; border-radius: var(--r-sm);
+      text-decoration: none; transition: var(--t);
+    }
+    .quick-action--wa   { background: #22C55E; }
+    .quick-action--wa:hover { background: #16A34A; transform: translateY(-1px); }
+    .quick-action--p1   { background: var(--wine); }
+    .quick-action--p1:hover { background: var(--wine-deep); transform: translateY(-1px); }
+    .quick-action--p2   { background: var(--saffron); }
+    .quick-action--p2:hover { background: #9E4A12; transform: translateY(-1px); }
+    .qa-icon {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .qa-icon svg { width: 18px; height: 18px; }
+    .qa-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.65); display: block; }
+    .qa-value { font-size: 1rem; font-weight: 700; color: var(--white); font-family: var(--font-h); display: block; margin-top: 1px; }
+
+    /* Address cards */
+    .address-cards { display: flex; flex-direction: column; gap: 0.6rem; }
+    .address-card {
+      background: var(--white); border: 1px solid var(--cream-3);
+      border-left: 3px solid var(--gold); border-radius: var(--r-sm);
+      padding: 1.2rem 1.4rem;
+    }
+    .address-card h4 {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--wine-deep); margin-bottom: 0.4rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .address-card h4 svg { width: 13px; height: 13px; stroke: var(--wine); fill: none; stroke-width: 2; stroke-linecap: round; flex-shrink: 0; }
+    .address-card p { font-size: 0.83rem; color: var(--text-mid); line-height: 1.65; margin: 0; }
+    .address-card a {
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      font-size: 0.74rem; font-weight: 700; color: var(--wine);
+      margin-top: 0.5rem; transition: var(--t);
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .address-card a:hover { color: var(--saffron); }
+    .address-card a svg { width: 11px; height: 11px; stroke: currentColor; fill: none; stroke-width: 2.5; }
+
+    /* Hours card */
+    .hours-card {
+      background: var(--white); border: 1px solid var(--cream-3);
+      border-radius: var(--r-sm); padding: 1.2rem 1.4rem;
+    }
+    .hours-card h4 {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--wine-deep); margin-bottom: 0.8rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .hours-card h4 svg { width: 13px; height: 13px; stroke: var(--wine); fill: none; stroke-width: 2; stroke-linecap: round; flex-shrink: 0; }
+    .hours-row {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.82rem; padding: 0.35rem 0;
+      border-bottom: 1px solid var(--cream-3); color: var(--text-mid);
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row .day  { font-weight: 600; }
+    .hours-row .time { color: var(--green); font-weight: 600; font-size: 0.78rem; }
+
+    /* ── RIGHT: FORM ── */
+    .contact-form-card {
+      background: var(--white); border: 1px solid var(--cream-3);
+      border-radius: var(--r-md); overflow: hidden;
+    }
+    .form-header {
+      background: var(--wine-deep); padding: 2rem 2rem 1.5rem;
+    }
+    .form-header h3 { color: var(--white); font-size: 1.4rem; margin-bottom: 0.35rem; }
+    .form-header p  { color: rgba(255,255,255,0.5); font-size: 0.84rem; margin: 0; }
+
+    .success-banner {
+      display: none; background: #F0FDF4; border: 1px solid #BBF7D0;
+      margin: 1.5rem 2rem 0; border-radius: var(--r-sm);
+      padding: 0.9rem 1rem; font-size: 0.85rem; color: #15803D;
+      gap: 0.5rem; align-items: flex-start;
+    }
+    .success-banner.visible { display: flex; }
+    .success-banner svg { flex-shrink: 0; stroke: currentColor; fill: none; stroke-width: 2.5; width: 15px; height: 15px; margin-top: 1px; }
+
+    .form-body { padding: 1.75rem 2rem 0; }
+    .form-row  { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+    .form-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+      color: var(--text-mid);
+    }
+    .req { color: var(--wine); }
+    .form-control {
+      padding: 0.7rem 0.9rem; border: 1.5px solid var(--cream-3);
+      border-radius: var(--r-sm); font-size: 0.88rem; color: var(--text-dark);
+      background: var(--white); outline: none; width: 100%;
+      transition: border-color var(--t);
+    }
+    .form-control:focus { border-color: var(--wine); box-shadow: 0 0 0 3px rgba(94,18,18,0.07); }
+    .form-group.has-error .form-control { border-color: #DC2626; }
+    .field-error { font-size: 0.72rem; color: #DC2626; display: none; margin-top: 2px; }
+    .form-group.has-error .field-error { display: block; }
+
+    .form-footer {
+      padding: 1.25rem 2rem 2rem;
+      display: flex; flex-direction: column; gap: 0.75rem;
+    }
+    .btn-submit { width: 100%; justify-content: center; padding: 0.9rem; font-size: 0.84rem; }
+    .privacy-note {
+      display: flex; align-items: flex-start; gap: 0.4rem;
+      font-size: 0.72rem; color: var(--text-light); line-height: 1.55;
+    }
+    .privacy-note svg { flex-shrink: 0; margin-top: 1px; width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+    /* ── MAP ── */
+    .map-section { padding: 0 5% 5rem; max-width: 1100px; margin: 0 auto; }
+    .map-head { margin-bottom: 1rem; }
+    .map-head h3 {
+      font-size: 1rem; font-weight: 700; color: var(--wine-deep);
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .map-head h3 svg { width: 16px; height: 16px; stroke: var(--wine); fill: none; stroke-width: 2; stroke-linecap: round; }
+    .map-embed {
+      border-radius: var(--r-md); overflow: hidden;
+      border: 1px solid var(--cream-3);
+    }
+    .map-embed iframe { width: 100%; height: 340px; border: none; display: block; }
+
+    /* ── FAQ ── */
+    .faq-section { padding: 4rem 5% 6rem; background: var(--ivory); }
+    .faq-inner   { max-width: 720px; margin: 2.5rem auto 0; }
+
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
+      .form-body   { padding: 1.5rem 1.5rem 0; }
+      .form-footer { padding: 1rem 1.5rem 1.5rem; }
+      .success-banner { margin: 1rem 1.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-mark"><svg viewBox="0 0 38 38"><rect width="38" height="38" rx="4" fill="#3A0808"/><rect x="6" y="5" width="26" height="1.2" fill="#A87C2A"/><text x="19" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="600" fill="#C8A84A" letter-spacing="-0.5">SC</text><rect x="6" y="31.8" width="26" height="1.2" fill="#A87C2A"/></svg></div>
+      <div><span class="logo-name">Shiv Caterers</span><span class="logo-sub">Pure Vegetarian</span></div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a>
+      <a href="customize-menu.html">Customize</a><a href="contact.html" class="active">Contact</a>
+      <a href="tel:+919130192121" class="nav-cta">Call Now</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html">Home</a><a href="about.html">About Us</a><a href="menu.html">Full Menu</a>
+    <a href="customize-menu.html">Customize Menu</a><a href="contact.html" class="active">Contact</a>
+    <div class="nav-mobile-footer">
+      <a href="https://wa.me/919130192121" target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;justify-content:center;">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Inquiry
+      </a>
+    </div>
+  </nav>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow" style="color:var(--gold-light);justify-content:center;">Reach Us</div>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear about your event. Call, WhatsApp, or fill in our form.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>Contact</span></div>
+  </div>
+</div>
+
+<!-- CONTACT BODY -->
+<main class="contact-body">
+  <div class="contact-grid">
+
+    <!-- LEFT: INFO -->
+    <div class="contact-info">
+      <div class="info-intro">
+        <h2 class="heading" style="font-size:1.4rem;">Let's Plan Your Celebration</h2>
+        <p>Whether you have a date in mind or are just exploring options, reach out to <strong style="color:var(--wine-deep)">Kashiram Supekar</strong>. We'll guide you through menu options, pricing, and logistics — completely free.</p>
+      </div>
+
+      <div class="quick-actions">
+        <a href="https://wa.me/919130192121?text=Hello%20Shiv%20Caterers%2C%20I%20would%20like%20to%20inquire%20about%20catering%20for%20my%20event." class="quick-action quick-action--wa" target="_blank" rel="noopener">
+          <div class="qa-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div>
+            <span class="qa-label">WhatsApp — Fastest Response</span>
+            <span class="qa-value">+91 91301 92121</span>
+          </div>
+        </a>
+        <a href="tel:+919130192121" class="quick-action quick-action--p1">
+          <div class="qa-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.07 6.07l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <span class="qa-label">Primary Number</span>
+            <span class="qa-value">+91 91301 92121</span>
+          </div>
+        </a>
+        <a href="tel:+918308041799" class="quick-action quick-action--p2">
+          <div class="qa-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.07 6.07l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <span class="qa-label">Alternate Number</span>
+            <span class="qa-value">+91 83080 41799</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="address-cards">
+        <div class="address-card">
+          <h4>
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Chinchwad Office
+          </h4>
+          <p>Dnyandeep Colony, Dagdoba Chowk,<br>Chinchwadnagar, Chinchwad,<br>Pune – 411 033</p>
+          <a href="https://maps.google.com/?q=Dagdoba+Chowk+Chinchwadnagar+Chinchwad+Pune+411033" target="_blank" rel="noopener">
+            Get Directions
+            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7,7 17,7 17,17"/></svg>
+          </a>
+        </div>
+        <div class="address-card">
+          <h4>
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ravet Office
+          </h4>
+          <p>Near Kohinur Grand, Mukai Chowk,<br>Ravet – 412 101</p>
+          <a href="https://maps.google.com/?q=Mukai+Chowk+Ravet+Pune+412101" target="_blank" rel="noopener">
+            Get Directions
+            <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7,7 17,7 17,17"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hours-card">
+        <h4>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          Availability
+        </h4>
+        <div class="hours-row"><span class="day">Monday – Friday</span><span class="time">8:00 AM – 9:00 PM</span></div>
+        <div class="hours-row"><span class="day">Saturday</span><span class="time">8:00 AM – 9:00 PM</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span class="time">9:00 AM – 8:00 PM</span></div>
+        <div class="hours-row"><span class="day">Email</span><span class="time" style="color:var(--text-light);font-size:0.75rem;">shivcaterers2121@gmail.com</span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: FORM -->
+    <div class="contact-form-card">
+      <div class="form-header">
+        <h3>Send an Inquiry</h3>
+        <p>Fill in your event details and we'll get back within a few hours via WhatsApp or call.</p>
+      </div>
+
+      <div class="success-banner" id="successBanner" role="alert">
+        <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
+        <span>Your inquiry has been sent via WhatsApp. Kashiram Supekar will respond with a quote shortly.</span>
+      </div>
+
+      <form id="contactForm" novalidate>
+        <div class="form-body">
+          <div class="form-row">
+            <div class="form-group" id="fg-name">
+              <label class="form-label" for="ctName">Your Name <span class="req">*</span></label>
+              <input type="text" id="ctName" class="form-control" placeholder="Full name" autocomplete="name" required />
+              <div class="field-error">Please enter your name.</div>
+            </div>
+            <div class="form-group" id="fg-phone">
+              <label class="form-label" for="ctPhone">Mobile Number <span class="req">*</span></label>
+              <input type="tel" id="ctPhone" class="form-control" placeholder="10-digit mobile" autocomplete="tel" required />
+              <div class="field-error">Enter a valid 10-digit number.</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group" id="fg-etype">
+              <label class="form-label" for="ctEvent">Event Type <span class="req">*</span></label>
+              <select id="ctEvent" class="form-control" required>
+                <option value="">Select event type</option>
+                <option>Wedding</option>
+                <option>Birthday Party</option>
+                <option>Housewarming / Vastu</option>
+                <option>Munj / Upanayana</option>
+                <option>Dohale Jevan</option>
+                <option>Barsa Ceremony</option>
+                <option>Corporate Event</option>
+                <option>Religious Function</option>
+                <option>Social Gathering</option>
+                <option>Other</option>
+              </select>
+              <div class="field-error">Please select an event type.</div>
+            </div>
+            <div class="form-group" id="fg-guests">
+              <label class="form-label" for="ctGuests">Expected Guests <span class="req">*</span></label>
+              <input type="number" id="ctGuests" class="form-control" placeholder="e.g. 200" min="1" required />
+              <div class="field-error">Please enter the guest count.</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="ctDate">Event Date</label>
+              <input type="date" id="ctDate" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ctLocation">Venue / Area</label>
+              <input type="text" id="ctLocation" class="form-control" placeholder="Area or venue name, Pune" />
+            </div>
+          </div>
+          <div class="form-row" style="grid-template-columns:1fr;">
+            <div class="form-group">
+              <label class="form-label" for="ctPackage">Preferred Package</label>
+              <select id="ctPackage" class="form-control">
+                <option value="">Not decided yet</option>
+                <option value="Regular Thali – ₹200/plate">Regular Thali – ₹200 / plate</option>
+                <option value="Special Thali – ₹240/plate">Special Thali – ₹240 / plate</option>
+                <option value="Deluxe Thali – ₹300/plate">Deluxe Thali – ₹300 / plate</option>
+                <option value="Custom Menu">Custom Menu (I'll choose dishes)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row" style="grid-template-columns:1fr;margin-bottom:0;">
+            <div class="form-group">
+              <label class="form-label" for="ctMessage">Message / Special Requirements</label>
+              <textarea id="ctMessage" class="form-control" rows="3" placeholder="Any dietary requirements, custom dish requests, venue details or questions..."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-footer">
+          <button type="submit" id="ctSubmitBtn" class="btn btn-wa btn-submit">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Send Inquiry via WhatsApp
+          </button>
+          <div class="privacy-note">
+            <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            Your details are used only to respond to your catering inquiry. We do not share your information with anyone.
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<!-- MAP -->
+<div class="contact-body" style="padding-top:0;">
+  <div class="map-section">
+    <div class="map-head">
+      <h3><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Our Location — Chinchwad, Pune</h3>
+    </div>
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.5!2d73.7948!3d18.6250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e7c1e2c3d1%3A0x0!2sChinchwadnagar%2C+Chinchwad%2C+Pune%2C+Maharashtra+411033!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Shiv Caterers location in Chinchwad, Pune"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="faq-section reveal">
+  <div class="container text-center">
+    <div class="eyebrow">FAQ</div>
+    <h2 class="heading">Common Questions</h2>
+  </div>
+  <div class="faq-inner">
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How quickly do you respond to inquiries?<span class="faq-toggle">+</span></button><div class="faq-a">WhatsApp messages receive the fastest response — usually within a few hours. For urgent requirements, please call directly on 9130192121 or 8308041799.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you cater outside Pune city?<span class="faq-toggle">+</span></button><div class="faq-a">We primarily serve Pune city and PCMC — Chinchwad, Pimpri, Ravet, Akurdi, Bhosari, Hinjewadi, Wakad, Kothrud, Hadapsar, Aundh, Baner, Pashan and surrounding areas. For locations further out, please contact us to discuss feasibility.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What is the advance payment and booking process?<span class="faq-toggle">+</span></button><div class="faq-a">After we finalize the menu and quote, a token advance is required to confirm your booking. The balance is settled on the event day. Full details are provided during consultation.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you handle last-minute bookings?<span class="faq-toggle">+</span></button><div class="faq-a">We do our best to accommodate urgent requests subject to availability. Please call us directly for last-minute bookings — we will do everything possible to help.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you provide decoration or only food service?<span class="faq-toggle">+</span></button><div class="faq-a">We specialise in catering — food preparation, buffet setup, tables, chairs, serving staff and utensils. We can recommend trusted decoration vendors in Pune if required.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:0">
+        <div class="logo-mark"><svg viewBox="0 0 38 38"><rect width="38" height="38" rx="4" fill="#5E1212"/><rect x="6" y="5" width="26" height="1.2" fill="#A87C2A"/><text x="19" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="600" fill="#C8A84A" letter-spacing="-0.5">SC</text><rect x="6" y="31.8" width="26" height="1.2" fill="#A87C2A"/></svg></div>
+        <div><span class="logo-name">Shiv Caterers</span><span class="logo-sub">Pure Vegetarian</span></div>
+      </div>
+      <p class="footer-tagline">Trusted pure vegetarian catering for weddings, birthday parties, munj, housewarming and all family celebrations across Pune and PCMC.</p>
+      <div class="footer-contacts">
+        <a href="tel:+919130192121" class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.8 19.79 19.79 0 011 1.12 2 2 0 013 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.07 6.07l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>9130192121</a>
+        <a href="tel:+918308041799" class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.8 19.79 19.79 0 011 1.12 2 2 0 013 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.07 6.07l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>8308041799</a>
+        <a href="mailto:shivcaterers2121@gmail.com" class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>shivcaterers2121@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Full Menu</a></li>
+        <li><a href="customize-menu.html">Customize Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Events We Serve</h5>
+      <ul>
+        <li><a href="contact.html">Wedding Catering</a></li>
+        <li><a href="contact.html">Birthday Parties</a></li>
+        <li><a href="contact.html">Housewarming / Vastu</a></li>
+        <li><a href="contact.html">Munj Ceremony</a></li>
+        <li><a href="contact.html">Dohale Jevan</a></li>
+        <li><a href="contact.html">Corporate Events</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Shiv Caterers — Kashiram Supekar, Pune, Maharashtra</span>
+    <div class="footer-veg"><div class="footer-veg-dot"></div>100% Pure Veg</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919130192121" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="script.js"></script>
+<script>
+(function(){
+  'use strict';
+  var form = document.getElementById('contactForm');
+  var submitBtn = document.getElementById('ctSubmitBtn');
+  var successBanner = document.getElementById('successBanner');
+  if (!form) return;
+
+  function validate() {
+    var ok = true;
+    var name = document.getElementById('ctName');
+    var fg_name = document.getElementById('fg-name');
+    if (fg_name) { if (!name||name.value.trim().length<2){fg_name.classList.add('has-error');ok=false;}else{fg_name.classList.remove('has-error');} }
+    var phone = document.getElementById('ctPhone');
+    var fg_phone = document.getElementById('fg-phone');
+    if (fg_phone) { if (!phone||!/^\d{10}$/.test(phone.value.replace(/\s/g,''))){fg_phone.classList.add('has-error');ok=false;}else{fg_phone.classList.remove('has-error');} }
+    var ev = document.getElementById('ctEvent');
+    var fg_et = document.getElementById('fg-etype');
+    if (fg_et) { if (!ev||!ev.value){fg_et.classList.add('has-error');ok=false;}else{fg_et.classList.remove('has-error');} }
+    var guests = document.getElementById('ctGuests');
+    var fg_g = document.getElementById('fg-guests');
+    if (fg_g) { if (!guests||!guests.value||parseInt(guests.value)<1){fg_g.classList.add('has-error');ok=false;}else{fg_g.classList.remove('has-error');} }
+    return ok;
+  }
+
+  ['ctName','ctPhone','ctEvent','ctGuests'].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el) el.addEventListener('input', validate);
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!validate()) return;
+    var name    = document.getElementById('ctName').value.trim();
+    var phone   = document.getElementById('ctPhone').value.trim();
+    var etype   = document.getElementById('ctEvent').value;
+    var guests  = document.getElementById('ctGuests').value;
+    var date    = (document.getElementById('ctDate')||{}).value||'';
+    var loc     = (document.getElementById('ctLocation')||{}).value||'';
+    var pkg     = (document.getElementById('ctPackage')||{}).value||'';
+    var msg     = (document.getElementById('ctMessage')||{}).value||'';
+    var lines = [
+      '*New Catering Inquiry — Shiv Caterers*',
+      '──────────────────────',
+      '*Name:* ' + name,
+      '*Mobile:* ' + phone,
+      '*Event:* ' + etype,
+      '*Guests:* ' + guests,
+    ];
+    if(date) lines.push('*Date:* ' + date);
+    if(loc)  lines.push('*Location:* ' + loc);
+    if(pkg)  lines.push('*Package:* ' + pkg);
+    if(msg)  lines.push('*Message:* ' + msg);
+    lines.push('──────────────────────');
+    lines.push('_Sent via shivcaterers.in Contact Page_');
+    var waURL = 'https://wa.me/919130192121?text=' + encodeURIComponent(lines.join('\n'));
+    submitBtn.textContent = 'Opening WhatsApp…';
+    submitBtn.disabled = true;
+    window.open(waURL,'_blank','noopener,noreferrer');
+    setTimeout(function(){
+      successBanner.classList.add('visible');
+      form.reset();
+      submitBtn.innerHTML = 'Inquiry Sent';
+      submitBtn.disabled = false;
+      successBanner.scrollIntoView({behavior:'smooth',block:'nearest'});
+    }, 800);
+  });
+})();
+</script>
+</body>
+</html>

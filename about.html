@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Shiv Caterers — Pure Veg Catering Pune</title>
+  <meta name="description" content="Learn about Shiv Caterers Pune — founded by Kashiram Supekar. Trusted pure vegetarian catering for weddings, birthday parties, munj & all family events across Pune & PCMC." />
+  <meta name="keywords" content="about Shiv Caterers, Kashiram Supekar caterer Pune, pure veg catering Chinchwad, catering services Pune PCMC" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://shivcaterers.in/about.html" />
+  <meta property="og:title" content="About Shiv Caterers — Pune's Trusted Pure Veg Catering" />
+  <meta property="og:description" content="Meet Kashiram Supekar & the Shiv Caterers team. Over a decade of pure vegetarian catering excellence for every Pune family celebration." />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Shiv Caterers","founder":{"@type":"Person","name":"Kashiram Supekar"},"url":"https://shivcaterers.in","telephone":"+919130192121","address":{"@type":"PostalAddress","streetAddress":"Dnyandeep Colony, Dagdoba Chowk, Chinchwadnagar","addressLocality":"Chinchwad, Pune","addressRegion":"Maharashtra","postalCode":"411033","addressCountry":"IN"}}</script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── STORY ── */
+    .story { padding: 7rem 5%; background: var(--ivory); }
+    .story-grid {
+      max-width: 1160px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+    }
+    .story-imgs { position: relative; }
+    .story-img-main { border-radius: var(--r-md); overflow: hidden; box-shadow: var(--shadow-md); }
+    .story-img-main img { width: 100%; height: 460px; object-fit: cover; }
+    .story-img-thumb {
+      position: absolute; bottom: -2rem; right: -1.5rem;
+      width: 46%; border-radius: var(--r-md); overflow: hidden;
+      border: 5px solid var(--white); box-shadow: var(--shadow-md);
+    }
+    .story-img-thumb img { width: 100%; height: 170px; object-fit: cover; }
+    .story-badge {
+      position: absolute; top: -1.5rem; left: -1.5rem;
+      background: var(--wine); color: var(--white);
+      padding: 1.2rem 1.5rem; border-radius: var(--r-sm);
+      text-align: center; box-shadow: var(--shadow-md);
+    }
+    .story-badge .num { font-family: var(--font-h); font-size: 2.2rem; font-weight: 700; line-height: 1; display: block; }
+    .story-badge .lbl { font-size: 0.65rem; opacity: 0.65; letter-spacing: 0.06em; display: block; margin-top: 3px; }
+    .story-text p { margin-bottom: 1.1rem; }
+    .story-metrics {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
+      background: var(--cream-3); border: 1px solid var(--cream-3);
+      border-radius: var(--r-sm); overflow: hidden; margin: 2rem 0 2.5rem;
+    }
+    .metric { background: var(--cream); padding: 1.25rem 1.5rem; }
+    .metric .num { font-family: var(--font-h); font-size: 2rem; font-weight: 600; color: var(--wine); line-height: 1; display: block; }
+    .metric .lbl { font-size: 0.72rem; color: var(--text-light); margin-top: 4px; display: block; letter-spacing: 0.04em; }
+
+    /* ── VALUES ── */
+    .values { padding: 7rem 5%; background: var(--cream); }
+    .values-inner { max-width: 1160px; margin: 0 auto; }
+    .values-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+      background: var(--cream-3); border: 1px solid var(--cream-3);
+      border-radius: var(--r-md); overflow: hidden; margin-top: 3rem;
+    }
+    .value-cell {
+      background: var(--white); padding: 2.5rem 2rem;
+      transition: var(--t);
+    }
+    .value-cell:hover { background: var(--cream); }
+    .value-icon {
+      width: 44px; height: 44px; border-radius: var(--r-sm);
+      background: var(--cream-2); display: flex; align-items: center; justify-content: center;
+      color: var(--wine); margin-bottom: 1.2rem;
+    }
+    .value-icon svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .value-cell h3 { font-size: 1.15rem; margin-bottom: 0.6rem; }
+    .value-cell p  { font-size: 0.86rem; line-height: 1.75; }
+
+    /* ── SERVICES ── */
+    .services { padding: 7rem 5%; background: var(--ivory); }
+    .services-inner { max-width: 1160px; margin: 0 auto; }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .service-card {
+      border: 1px solid var(--cream-3); border-radius: var(--r-md);
+      padding: 2rem; background: var(--white); transition: var(--t);
+      display: grid; grid-template-columns: 48px 1fr; gap: 1.2rem; align-items: start;
+    }
+    .service-card:hover { border-color: var(--wine); box-shadow: var(--shadow-sm); }
+    .service-icon {
+      width: 48px; height: 48px; border-radius: var(--r-sm);
+      background: var(--cream-2); display: flex; align-items: center; justify-content: center;
+      color: var(--wine); flex-shrink: 0; margin-top: 2px;
+    }
+    .service-icon svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .service-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .service-card p  { font-size: 0.84rem; color: var(--text-light); line-height: 1.7; margin: 0; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.75rem; }
+    .service-tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+      background: var(--cream-2); color: var(--wine);
+      padding: 3px 8px; border-radius: 2px;
+    }
+
+    /* ── PROCESS ── */
+    .process { padding: 7rem 5%; background: var(--cream); }
+    .process-inner { max-width: 780px; margin: 0 auto; }
+    .process-steps { display: flex; flex-direction: column; margin-top: 3rem; }
+    .process-step {
+      display: grid; grid-template-columns: 56px 1fr;
+      gap: 1.5rem; position: relative;
+    }
+    .process-step:not(:last-child)::before {
+      content: '';
+      position: absolute; left: 27px; top: 56px; bottom: 0;
+      width: 1px; background: var(--cream-3);
+    }
+    .step-num {
+      width: 56px; height: 56px; border-radius: 50%;
+      border: 1.5px solid var(--cream-3); background: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-h); font-size: 1.3rem; font-weight: 600;
+      color: var(--wine); flex-shrink: 0; z-index: 1;
+      position: relative;
+    }
+    .step-body { padding: 1rem 0 2.5rem; }
+    .step-body h4 { font-size: 0.95rem; font-weight: 700; color: var(--wine-deep); margin-bottom: 0.3rem; }
+    .step-body p  { font-size: 0.86rem; color: var(--text-light); line-height: 1.75; margin: 0; }
+
+    /* ── WHY US ── */
+    .why-us { padding: 7rem 5%; background: var(--ivory); }
+    .why-us-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+    }
+    .why-list { display: flex; flex-direction: column; gap: 0; margin-top: 2rem; }
+    .why-item {
+      display: flex; align-items: flex-start; gap: 1rem;
+      padding: 1.2rem 0; border-bottom: 1px solid var(--cream-3);
+    }
+    .why-item:first-child { border-top: 1px solid var(--cream-3); }
+    .why-check {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: rgba(42,94,42,0.1);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .why-check svg { width: 13px; height: 13px; stroke: var(--green); fill: none; stroke-width: 2.5; stroke-linecap: round; }
+    .why-item h4 { font-size: 0.88rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.2rem; }
+    .why-item p  { font-size: 0.82rem; color: var(--text-light); line-height: 1.6; margin: 0; }
+    .why-img { border-radius: var(--r-md); overflow: hidden; box-shadow: var(--shadow-md); }
+    .why-img img { width: 100%; height: 480px; object-fit: cover; }
+
+    /* ── CTA ── */
+    .about-cta {
+      padding: 7rem 5%;
+      background: var(--wine-deep); text-align: center; position: relative; overflow: hidden;
+    }
+    .about-cta::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(168,124,42,0.12) 0%, transparent 65%);
+    }
+    .about-cta-inner { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; }
+    .about-cta h2 { color: var(--white); margin-bottom: 1rem; }
+    .about-cta p  { color: rgba(255,255,255,0.55); margin-bottom: 2.5rem; }
+    .about-cta-btns { display: flex; justify-content: center; gap: 0.85rem; flex-wrap: wrap; }
+
+    @media (max-width: 960px) {
+      .story-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .story-imgs  { display: none; }
+      .values-grid { grid-template-columns: 1fr 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .why-us-inner { grid-template-columns: 1fr; }
+      .why-img { display: none; }
+    }
+    @media (max-width: 600px) {
+      .values-grid { grid-template-columns: 1fr; }
+      .story-metrics { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Shiv Caterers — Home">
+      <div class="logo-mark">
+        <svg viewBox="0 0 38 38"><rect width="38" height="38" rx="4" fill="#3A0808"/><rect x="6" y="5" width="26" height="1.2" fill="#A87C2A"/><text x="19" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="600" fill="#C8A84A" letter-spacing="-0.5">SC</text><rect x="6" y="31.8" width="26" height="1.2" fill="#A87C2A"/></svg>
+      </div>
+      <div><span class="logo-name">Shiv Caterers</span><span class="logo-sub">Pure Vegetarian</span></div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="customize-menu.html">Customize</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:+919130192121" class="nav-cta">Call Now</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="menu.html">Full Menu</a>
+    <a href="customize-menu.html">Customize Menu</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-mobile-footer">
+      <a href="https://wa.me/919130192121" target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;justify-content:center;">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Inquiry
+      </a>
+    </div>
+  </nav>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow" style="color:var(--gold-light);justify-content:center;">Our Story</div>
+    <h1>About Shiv Caterers</h1>
+    <p>Over a decade of trusted, pure vegetarian catering for Pune families</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>About</span></div>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="story reveal">
+  <div class="story-grid">
+    <div class="story-imgs">
+      <div class="story-img-main">
+        <img src="images/event1.jpg" alt="Shiv Caterers outdoor event setup — round tables with pink linen and white chair covers" loading="lazy" />
+      </div>
+      <div class="story-img-thumb">
+        <img src="images/event-buffet.jpg" alt="Professional buffet with golden chafing dishes at an indoor venue" loading="lazy" />
+      </div>
+      <div class="story-badge"><span class="num">10+</span><span class="lbl">Years of Excellence</span></div>
+    </div>
+    <div class="story-text">
+      <div class="eyebrow">Our Story</div>
+      <h2 class="heading">Founded on the Belief That Great Food Is the Heart of Every Celebration</h2>
+      <p>Shiv Caterers was established by <strong style="color:var(--wine-deep)">Kashiram Supekar</strong> with a simple but powerful conviction — every family deserves hygienic, freshly prepared, and genuinely delicious food at their most meaningful moments.</p>
+      <p>What started as a modest catering venture in Chinchwad has grown into one of Pune's most trusted names for pure vegetarian event catering. From intimate housewarming ceremonies to large 500-guest weddings, we bring the same care, attention, and warmth to every event we serve.</p>
+      <p>Our deep roots in Maharashtrian culture mean we understand the sanctity of occasions like munj, dohale jevan, barsa, and vastu shanti — and we take pride in serving food that honours these traditions authentically.</p>
+      <div class="story-metrics">
+        <div class="metric"><span class="num">500+</span><span class="lbl">Events Catered</span></div>
+        <div class="metric"><span class="num">4.8</span><span class="lbl">Google Rating</span></div>
+        <div class="metric"><span class="num">150+</span><span class="lbl">Veg Dishes on Menu</span></div>
+        <div class="metric"><span class="num">10+</span><span class="lbl">Years of Experience</span></div>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values reveal">
+  <div class="values-inner">
+    <div class="text-center">
+      <div class="eyebrow">What We Stand For</div>
+      <h2 class="heading">Our Core Values</h2>
+      <p class="subheading">The principles that guide every event we cater and every plate we serve.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-cell">
+        <div class="value-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Pure Vegetarian Promise</h3>
+        <p>We are 100% vegetarian — always. Our kitchen, utensils, and team are exclusively dedicated to pure veg cooking. No compromise, no exceptions.</p>
+      </div>
+      <div class="value-cell">
+        <div class="value-icon"><svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><polyline points="12,6 12,12 16,14"/></svg></div>
+        <h3>Timely and Reliable</h3>
+        <p>We arrive early, set up completely, and ensure hot food is ready the moment your guests arrive. Punctuality is not an option for us — it is a commitment.</p>
+      </div>
+      <div class="value-cell">
+        <div class="value-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+        <h3>Hygiene &amp; Freshness</h3>
+        <p>Every dish is prepared fresh on the day of your event. We maintain strict hygiene protocols so your guests enjoy food that is clean, safe, and full of flavour.</p>
+      </div>
+      <div class="value-cell">
+        <div class="value-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3>Honest Pricing</h3>
+        <p>Transparent, competitive pricing starting at ₹200 per plate. You receive a complete quote upfront — no hidden charges, no surprises on the day.</p>
+      </div>
+      <div class="value-cell">
+        <div class="value-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>Professional Team</h3>
+        <p>Courteous, well-presented, and experienced staff who manage your event efficiently and with warmth — so every guest feels looked after.</p>
+      </div>
+      <div class="value-cell">
+        <div class="value-icon"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+        <h3>Personalised Menus</h3>
+        <p>No two events are alike. We work with you to create a menu tailored to your guests, occasion, and budget — using our 150+ dish selection.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services reveal">
+  <div class="services-inner">
+    <div class="text-center">
+      <div class="eyebrow">What We Offer</div>
+      <h2 class="heading">Events &amp; Occasions We Serve</h2>
+      <p class="subheading">From the most intimate family ceremonies to large-scale wedding receptions — we have the experience and the menu for every occasion.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div>
+          <h3>Wedding Catering</h3>
+          <p>Complete wedding day catering with customised menus, full buffet setup, welcome drinks, starters, main course and desserts for all wedding ceremonies.</p>
+          <div class="service-tags"><span class="service-tag">Buffet Setup</span><span class="service-tag">Custom Menu</span><span class="service-tag">Full Service</span></div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v4l3 3"/></svg></div>
+        <div>
+          <h3>Birthday Parties</h3>
+          <p>From small intimate birthday dinners to large celebrations — we ensure every guest is well-fed and the food becomes a talking point of your event.</p>
+          <div class="service-tags"><span class="service-tag">Chaat Counter</span><span class="service-tag">Ice Cream</span><span class="service-tag">Starters</span></div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
+        <div>
+          <h3>Housewarming &amp; Vastu</h3>
+          <p>Celebrate your new home with satvik, traditional pure veg food. We specialise in authentic Maharashtrian menus perfect for Vastu Shanti poojas.</p>
+          <div class="service-tags"><span class="service-tag">Satvik Menu</span><span class="service-tag">Traditional</span></div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+        <div>
+          <h3>Munj &amp; Upanayana</h3>
+          <p>This sacred ceremony deserves a special spread. We offer traditional Maharashtrian fare — puran poli, katachi amti, and all classic ceremonial dishes.</p>
+          <div class="service-tags"><span class="service-tag">Puran Poli</span><span class="service-tag">Traditional</span></div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div>
+          <h3>Dohale Jevan &amp; Barsa</h3>
+          <p>Deeply cherished Maharashtrian traditions. We craft menus that suit the significance and joy of these special family events with authentic, lovingly prepared food.</p>
+          <div class="service-tags"><span class="service-tag">Family Event</span><span class="service-tag">Traditional</span></div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+        <div>
+          <h3>Corporate Events</h3>
+          <p>Professional, hygienic, on-time catering for corporate gatherings, office lunches, team events and product launches. We understand corporate expectations.</p>
+          <div class="service-tags"><span class="service-tag">Punctual</span><span class="service-tag">Professional</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process reveal">
+  <div class="process-inner">
+    <div class="text-center">
+      <div class="eyebrow">How It Works</div>
+      <h2 class="heading">Simple Booking Process</h2>
+      <p class="subheading" style="margin:0 auto 0;">From your first inquiry to the final plate — we keep it simple and stress-free for you.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>Get in Touch</h4>
+          <p>Call, WhatsApp, or fill our inquiry form. Tell us about your event — date, location, guest count, and occasion. No obligation, completely free.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>Customize Your Menu</h4>
+          <p>We discuss your preferences and suggest a menu suited to your event. Or use our online Customize Menu tool to select from 150+ dishes and send us your list directly on WhatsApp.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>Receive Your Quotation</h4>
+          <p>We provide a clear, itemised quote with no hidden costs. You will know exactly what you are getting and at what price before confirming anything.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>Confirm the Booking</h4>
+          <p>Once you are satisfied, we confirm your booking and stay in regular contact as your event date approaches to manage any last-minute changes.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h4>Enjoy Your Celebration</h4>
+          <p>We arrive early, set everything up professionally, serve your guests with warmth, and leave the venue clean. You focus on the celebration — we handle the rest.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us reveal">
+  <div class="why-us-inner">
+    <div>
+      <div class="eyebrow">Why Choose Us</div>
+      <h2 class="heading">The Shiv Caterers Difference</h2>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></div>
+          <div><h4>Strictly 100% Pure Vegetarian</h4><p>No non-veg ever prepared in our kitchen. Complete peace of mind for every family we serve.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></div>
+          <div><h4>Full Event Setup Included</h4><p>Buffet tables, chafing dishes, round tables, chairs, and serving equipment — all arranged by us.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></div>
+          <div><h4>10+ Years Serving Pune &amp; PCMC</h4><p>Deep local knowledge of venues, tastes, and logistics across all areas of Pune and PCMC.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></div>
+          <div><h4>Starting at Just ₹200 per Plate</h4><p>Quality catering for every budget with transparent 3-tier package pricing and all inclusions clearly stated.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></div>
+          <div><h4>Owner-Managed Quality Control</h4><p>Kashiram Supekar personally oversees every event to ensure the highest standard of food and service.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></div>
+          <div><h4>4.8-Star Google Rating</h4><p>Our rating reflects the trust and satisfaction of hundreds of Pune families we have had the honour of serving.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="why-img">
+      <img src="images/event2.jpg" alt="Professional catering setup by Shiv Caterers at a family event in Pune" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="about-cta">
+  <div class="about-cta-inner">
+    <div class="eyebrow" style="color:var(--gold-light);justify-content:center;">Ready to Book?</div>
+    <h2>Let's Plan Your Celebration Together</h2>
+    <p>Get a free, no-obligation quotation today. We would love to be your catering partner.</p>
+    <div class="about-cta-btns">
+      <a href="https://wa.me/919130192121?text=Hello%20Shiv%20Caterers%2C%20I%20want%20to%20inquire%20about%20catering." class="btn btn-wa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp: 9130192121
+      </a>
+      <a href="customize-menu.html" class="btn btn-ghost">Build My Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-simple site-footer">
+  <div><div class="footer-simple-name">Shiv Caterers</div><div class="footer-simple-sub">Kashiram Supekar · Pure Veg Catering · Pune</div></div>
+  <nav class="footer-simple-nav">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="customize-menu.html">Customize</a><a href="contact.html">Contact</a>
+  </nav>
+  <div class="footer-simple-copy">© 2026 Shiv Caterers. All rights reserved.</div>
+</footer>
+
+<a href="https://wa.me/919130192121" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script src="script.js"></script>
+</body>
+</html>

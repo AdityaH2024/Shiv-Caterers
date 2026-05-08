@@ -1,0 +1,1872 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Shiv Caterers Pune — Pure Veg Catering for Weddings & Family Events
+    </title>
+    <meta
+      name="description"
+      content="Shiv Caterers — trusted pure vegetarian catering in Pune & Chinchwad. Weddings, birthday parties, housewarming, munj & all family events. Call 9130192121."
+    />
+    <meta
+      name="keywords"
+      content="pure veg caterers Pune, wedding caterers Pune, birthday catering Pune, housewarming catering, vegetarian catering PCMC, event caterers Chinchwad"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://shivcaterers.in/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Shiv Caterers Pune — Pure Veg Catering for Every Celebration"
+    />
+    <meta
+      property="og:description"
+      content="Trusted pure vegetarian catering for weddings, birthday parties, munj, housewarming & all family events in Pune. Professional. Timely. Affordable."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        "name": "Shiv Caterers",
+        "telephone": "+919130192121",
+        "priceRange": "₹₹",
+        "servesCuisine": ["Indian Vegetarian", "Maharashtrian"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dnyandeep Colony, Dagdoba Chowk",
+          "addressLocality": "Chinchwad, Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411033",
+          "addressCountry": "IN"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "200"
+        }
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ── HERO ── */
+      .hero {
+        margin-top: 70px;
+        position: relative;
+        min-height: calc(100vh - 70px);
+        padding-bottom: 120px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+      }
+      .hero-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 40%;
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          105deg,
+          rgba(30, 6, 6, 0.88) 0%,
+          rgba(40, 10, 10, 0.72) 50%,
+          rgba(50, 20, 10, 0.45) 100%
+        );
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 5%;
+        max-width: 640px;
+        padding-left: 8%;
+      }
+      .hero-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--gold-light);
+        margin-bottom: 1.5rem;
+      }
+      .hero-eyebrow::before,
+      .hero-eyebrow::after {
+        content: "";
+        width: 20px;
+        height: 1px;
+        background: currentColor;
+        opacity: 0.55;
+      }
+      .hero h1 {
+        color: var(--white);
+        font-size: clamp(2.4rem, 5.5vw, 4rem);
+        line-height: 1.1;
+        margin-bottom: 1.25rem;
+      }
+      .hero h1 em {
+        font-style: italic;
+        color: var(--gold-light);
+      }
+      .hero-sub {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.65);
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+        max-width: 440px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 0.85rem;
+        flex-wrap: wrap;
+        margin-bottom: 3.5rem;
+      }
+      .hero-stats {
+        display: flex;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .hero-stat .num {
+        font-family: var(--font-h);
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--gold-light);
+        line-height: 1;
+        display: block;
+      }
+      .hero-stat .lbl {
+        font-size: 0.72rem;
+        color: rgba(255, 255, 255, 0.45);
+        letter-spacing: 0.06em;
+        margin-top: 3px;
+        display: block;
+      }
+      .hero-scroll {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.65rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.35);
+      }
+      .hero-scroll-line {
+        width: 1px;
+        height: 40px;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        animation: scrollPulse 2s ease-in-out infinite;
+      }
+      @keyframes scrollPulse {
+        0%,
+        100% {
+          opacity: 0.4;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      /* ── ABOUT PREVIEW ── */
+      .about-preview {
+        padding: 7rem 5%;
+        background: var(--ivory);
+      }
+      .about-preview-grid {
+        max-width: 1160px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        align-items: center;
+      }
+      .about-imgs {
+        position: relative;
+      }
+      .about-img-main {
+        border-radius: var(--r-md);
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+      }
+      .about-img-main img {
+        width: 100%;
+        height: 440px;
+        object-fit: cover;
+      }
+      .about-img-accent {
+        position: absolute;
+        bottom: -2rem;
+        right: -1.5rem;
+        width: 48%;
+        border-radius: var(--r-md);
+        overflow: hidden;
+        border: 5px solid var(--white);
+        box-shadow: var(--shadow-md);
+      }
+      .about-img-accent img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .about-years {
+        position: absolute;
+        top: -1.5rem;
+        left: -1.5rem;
+        background: var(--wine);
+        color: white;
+        padding: 1.2rem 1.5rem;
+        border-radius: var(--r-sm);
+        text-align: center;
+        box-shadow: var(--shadow-md);
+      }
+      .about-years .big {
+        font-family: var(--font-h);
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .about-years .sm {
+        font-size: 0.68rem;
+        opacity: 0.7;
+        margin-top: 3px;
+        letter-spacing: 0.05em;
+      }
+      .about-text p {
+        margin-bottom: 1.2rem;
+      }
+      .about-vals {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        margin: 2rem 0 2.5rem;
+      }
+      .about-val {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.9rem;
+      }
+      .about-val-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: var(--r-sm);
+        background: var(--cream-2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--wine);
+      }
+      .about-val-icon svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+      }
+      .about-val h4 {
+        color: var(--text-dark);
+        margin-bottom: 0.15rem;
+        font-size: 0.88rem;
+      }
+      .about-val p {
+        font-size: 0.82rem;
+        color: var(--text-light);
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      /* ── EVENTS ── */
+      .events-section {
+        padding: 7rem 5%;
+        background: var(--cream);
+      }
+      .events-grid {
+        max-width: 1160px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--cream-3);
+        border: 1px solid var(--cream-3);
+        border-radius: var(--r-md);
+        overflow: hidden;
+        margin-top: 3rem;
+      }
+      .event-cell {
+        background: var(--white);
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        transition: var(--t);
+      }
+      .event-cell:hover {
+        background: var(--cream);
+      }
+      .event-cell-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: var(--r-sm);
+        background: var(--cream-2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--wine);
+      }
+      .event-cell-icon svg {
+        width: 18px;
+        height: 18px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .event-cell h4 {
+        font-size: 0.88rem;
+        color: var(--wine-deep);
+      }
+      .event-cell p {
+        font-size: 0.78rem;
+        color: var(--text-light);
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      /* ── GALLERY ── */
+      .gallery-section {
+        padding: 7rem 0;
+        background: var(--ivory);
+      }
+      .gallery-head {
+        max-width: 1160px;
+        margin: 0 auto 3rem;
+        padding: 0 5%;
+      }
+
+      /* ── MENU PREVIEW ── */
+      .menu-preview {
+        padding: 7rem 5%;
+        background: var(--cream);
+      }
+      .menu-preview-inner {
+        max-width: 1160px;
+        margin: 0 auto;
+      }
+      .menu-cats {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 1px;
+        background: var(--cream-3);
+        border: 1px solid var(--cream-3);
+        border-radius: var(--r-md);
+        overflow: hidden;
+        margin: 3rem 0;
+      }
+      .menu-cat {
+        background: var(--white);
+        padding: 1.5rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        transition: var(--t);
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .menu-cat:hover {
+        background: var(--wine);
+      }
+      .menu-cat:hover .mc-icon {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .menu-cat:hover .mc-name {
+        color: var(--white);
+      }
+      .menu-cat:hover .mc-count {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .mc-icon {
+        color: var(--wine);
+        transition: var(--t);
+      }
+      .mc-icon svg {
+        width: 20px;
+        height: 20px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+      }
+      .mc-name {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--wine-deep);
+        transition: var(--t);
+      }
+      .mc-count {
+        font-size: 0.7rem;
+        color: var(--text-light);
+        transition: var(--t);
+      }
+      .menu-cta-strip {
+        background: var(--wine-deep);
+        border-radius: var(--r-md);
+        padding: 3rem 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      .menu-cta-strip h3 {
+        color: var(--white);
+        font-size: 1.5rem;
+        margin-bottom: 0.4rem;
+      }
+      .menu-cta-strip p {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.88rem;
+        margin: 0;
+      }
+      .menu-cta-btns {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+      }
+
+      /* ── PACKAGES ── */
+      .packages-section {
+        padding: 7rem 5%;
+        background: var(--ivory);
+      }
+      .packages-grid {
+        max-width: 1160px;
+        margin: 3rem auto 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .pkg {
+        border: 1px solid var(--cream-3);
+        border-radius: var(--r-md);
+        padding: 2.5rem 2rem;
+        position: relative;
+        background: var(--white);
+        transition: var(--t);
+      }
+      .pkg:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-3px);
+      }
+      .pkg.featured {
+        border-color: var(--wine);
+      }
+      .pkg-popular {
+        position: absolute;
+        top: -11px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--wine);
+        color: white;
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 3px 12px;
+        border-radius: 2px;
+        white-space: nowrap;
+      }
+      .pkg-name {
+        font-family: var(--font-h);
+        font-size: 1.4rem;
+        color: var(--wine-deep);
+        margin-bottom: 0.25rem;
+      }
+      .pkg-price {
+        font-family: var(--font-h);
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: var(--wine);
+        line-height: 1;
+        margin: 1rem 0;
+      }
+      .pkg-price span {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--text-light);
+      }
+      .pkg-divider {
+        height: 1px;
+        background: var(--cream-3);
+        margin: 1.2rem 0;
+      }
+      .pkg-label {
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--text-light);
+        margin-bottom: 0.8rem;
+      }
+      .pkg-items {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+      }
+      .pkg-item {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.83rem;
+        color: var(--text-mid);
+      }
+      .pkg-item svg {
+        width: 13px;
+        height: 13px;
+        stroke: var(--green);
+        fill: none;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        flex-shrink: 0;
+      }
+      .pkg-note {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+        color: var(--text-light);
+        font-style: italic;
+      }
+
+      /* ── TESTIMONIALS ── */
+      .reviews-section {
+        padding: 7rem 5%;
+        background: var(--cream);
+      }
+      .reviews-grid {
+        max-width: 1160px;
+        margin: 3rem auto 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .review {
+        background: var(--white);
+        border-radius: var(--r-md);
+        padding: 2rem;
+        border-top: 2px solid var(--cream-3);
+        transition: var(--t);
+      }
+      .review:hover {
+        border-top-color: var(--gold);
+        box-shadow: var(--shadow-sm);
+      }
+      .review-stars {
+        display: flex;
+        gap: 2px;
+        margin-bottom: 1rem;
+      }
+      .review-stars svg {
+        width: 13px;
+        height: 13px;
+        fill: var(--gold);
+      }
+      .review-text {
+        font-size: 0.87rem;
+        color: var(--text-mid);
+        line-height: 1.75;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+      }
+      .review-author {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+      }
+      .review-avatar {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: var(--wine);
+        color: white;
+        font-weight: 700;
+        font-size: 0.82rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .review-name {
+        font-size: 0.83rem;
+        font-weight: 700;
+        color: var(--text-dark);
+      }
+      .review-event {
+        font-size: 0.72rem;
+        color: var(--text-light);
+      }
+      .google-proof {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--text-mid);
+        border: 1px solid var(--cream-3);
+        border-radius: var(--r-sm);
+        padding: 0.5rem 1rem;
+        width: fit-content;
+        margin: 0 auto 3rem;
+      }
+      .google-proof svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* ── FAQ ── */
+      .faq-section {
+        padding: 7rem 5%;
+        background: var(--ivory);
+      }
+      .faq-inner {
+        max-width: 720px;
+        margin: 3rem auto 0;
+      }
+
+      /* ── CONTACT CTA ── */
+      .cta-band {
+        padding: 7rem 5%;
+        background: var(--wine-deep);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .cta-band::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at 50% 50%,
+          rgba(168, 124, 42, 0.12) 0%,
+          transparent 65%
+        );
+      }
+      .cta-band-inner {
+        position: relative;
+        z-index: 1;
+        max-width: 580px;
+        margin: 0 auto;
+      }
+      .cta-band h2 {
+        color: var(--white);
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+        margin-bottom: 1rem;
+      }
+      .cta-band p {
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 2.5rem;
+      }
+      .cta-band-btns {
+        display: flex;
+        justify-content: center;
+        gap: 0.85rem;
+        flex-wrap: wrap;
+      }
+
+      /* Responsive */
+      @media (max-width: 960px) {
+        .about-preview-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+        .about-imgs {
+          display: none;
+        }
+        .events-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .packages-grid {
+          grid-template-columns: 1fr;
+        }
+        .reviews-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 640px) {
+        .hero-content {
+          padding-left: 5%;
+        }
+        .hero-actions {
+          flex-direction: column;
+        }
+        .hero-stats {
+          gap: 1.5rem;
+        }
+        .events-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .menu-cta-strip {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+      @media (max-width: 480px) {
+        .events-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="site-nav" id="siteNav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Shiv Caterers — Home">
+          <div class="logo-mark">
+            <svg viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+              <rect width="38" height="38" rx="4" fill="#3A0808" />
+              <rect x="6" y="5" width="26" height="1.2" fill="#A87C2A" />
+              <text
+                x="19"
+                y="26"
+                text-anchor="middle"
+                font-family="Georgia,serif"
+                font-size="16"
+                font-weight="600"
+                fill="#C8A84A"
+                letter-spacing="-0.5"
+              >
+                SC
+              </text>
+              <rect x="6" y="31.8" width="26" height="1.2" fill="#A87C2A" />
+            </svg>
+          </div>
+          <div>
+            <span class="logo-name">Shiv Caterers</span>
+            <span class="logo-sub">Pure Vegetarian</span>
+          </div>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="customize-menu.html">Customize</a>
+          <a href="contact.html">Contact</a>
+          <a href="tel:+919130192121" class="nav-cta">Call Now</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav-mobile" id="navMobile" aria-label="Mobile">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Full Menu</a>
+        <a href="customize-menu.html">Customize Menu</a>
+        <a href="contact.html">Contact</a>
+        <div class="nav-mobile-footer">
+          <a
+            href="https://wa.me/919130192121?text=Hello%20Shiv%20Caterers"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-wa"
+            style="width: 100%; justify-content: center"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            WhatsApp Inquiry
+          </a>
+        </div>
+      </nav>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">Pune & PCMC &nbsp;·&nbsp; Est. 2014</div>
+        <h1>Pure Vegetarian Catering for <em>Every Celebration</em></h1>
+        <p class="hero-sub">
+          From weddings and birthday parties to munj, housewarming and vastu
+          pooja — trusted, timely, and affordable catering across Pune.
+        </p>
+        <div class="hero-actions">
+          <a href="customize-menu.html" class="btn btn-primary"
+            >Customize My Menu</a
+          >
+          <a
+            href="https://wa.me/919130192121?text=Hello%20Shiv%20Caterers%2C%20I%20need%20a%20catering%20quote."
+            class="btn btn-ghost"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp Inquiry</a
+          >
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="num">500+</span><span class="lbl">Events Catered</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">4.8</span><span class="lbl">Google Rating</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">150+</span><span class="lbl">Veg Dishes</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          >
+            <polyline points="20,6 9,17 4,12" />
+          </svg>
+          100% Pure Vegetarian
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          >
+            <polyline points="20,6 9,17 4,12" />
+          </svg>
+          Timely Service Guaranteed
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          >
+            <polyline points="20,6 9,17 4,12" />
+          </svg>
+          Full Setup Included
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          >
+            <polyline points="20,6 9,17 4,12" />
+          </svg>
+          Starting ₹200 / plate
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          >
+            <polyline points="20,6 9,17 4,12" />
+          </svg>
+          Serving Pune &amp; PCMC
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="about-preview reveal">
+      <div class="about-preview-grid">
+        <div class="about-imgs">
+          <div class="about-img-main">
+            <img
+              src="Image 1.jpeg"
+              alt="Shiv Caterers event setup — outdoor buffet with pink-draped tables and white chairs"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-img-accent">
+            <img
+              src="image 2.png"
+              alt="Golden chafing dishes at a Shiv Caterers indoor buffet"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-years">
+            <span class="big">10+</span
+            ><span class="sm">Years of<br />Excellence</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="eyebrow">Our Story</div>
+          <h2 class="heading">
+            Kashiram Supekar's Legacy of Authentic Flavour
+          </h2>
+          <p>
+            Founded by
+            <strong style="color: var(--wine-deep)">Kashiram Supekar</strong>,
+            Shiv Caterers has been delivering hygienic, fresh, and delicious
+            pure vegetarian food for family celebrations across Pune and PCMC
+            for over a decade.
+          </p>
+          <p>
+            We believe that great food is at the heart of every great
+            celebration — and our team brings that belief to every event we
+            serve.
+          </p>
+          <div class="about-vals">
+            <div class="about-val">
+              <div class="about-val-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div>
+                <h4>100% Pure Vegetarian</h4>
+                <p>
+                  No compromise. Our kitchen and utensils are dedicated
+                  exclusively to pure veg cooking.
+                </p>
+              </div>
+            </div>
+            <div class="about-val">
+              <div class="about-val-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12,6 12,12 16,14" />
+                </svg>
+              </div>
+              <div>
+                <h4>Punctual, Every Time</h4>
+                <p>
+                  We arrive early, set up efficiently, and ensure food is hot
+                  and ready when your guests arrive.
+                </p>
+              </div>
+            </div>
+            <div class="about-val">
+              <div class="about-val-icon">
+                <svg viewBox="0 0 24 24">
+                  <line x1="12" y1="1" x2="12" y2="23" />
+                  <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+                </svg>
+              </div>
+              <div>
+                <h4>Transparent, Affordable Pricing</h4>
+                <p>
+                  Premium quality catering from ₹200/plate. No hidden charges,
+                  ever.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-outline">Learn About Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section class="events-section reveal">
+      <div class="container text-center">
+        <div class="eyebrow">Occasions We Serve</div>
+        <h2 class="heading">Every Celebration, Perfectly Catered</h2>
+        <p class="subheading">
+          From intimate family gatherings to grand wedding celebrations — we
+          tailor our menu and service to every occasion.
+        </p>
+      </div>
+      <div class="events-grid">
+        <div class="event-cell">
+          <div class="event-cell-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+              />
+            </svg>
+          </div>
+          <h4>Wedding</h4>
+          <p>Elegant spread for your most special day</p>
+        </div>
+        <div class="event-cell">
+          <div class="event-cell-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2a10 10 0 100 20A10 10 0 0012 2z" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </div>
+          <h4>Birthday Party</h4>
+          <p>Festive, delicious and stress-free</p>
+        </div>
+        <div class="event-cell">
+          <div class="event-cell-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9,22 9,12 15,12 15,22" />
+            </svg>
+          </div>
+          <h4>Housewarming</h4>
+          <p>Vastu Shanti catering with authentic flavours</p>
+        </div>
+        <div class="event-cell">
+          <div class="event-cell-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+            </svg>
+          </div>
+          <h4>Munj Ceremony</h4>
+          <p>Traditional sacred occasion, done right</p>
+        </div>
+        <div class="event-cell">
+          <div class="event-cell-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 22c-4.97 0-9-4.03-9-9V4.5l9-2.25L21 4.5V13c0 4.97-4.03 9-9 9z"
+              />
+            </svg>
+          </div>
+          <h4>Dohale Jevan</h4>
+          <p>Special menu for this cherished custom</p>
+        </div>
+        <div class="event-cell">
+          <div class="event-cell-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87" />
+              <path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <h4>Social Gatherings</h4>
+          <p>Society events and community functions</p>
+        </div>
+        <div class="event-cell">
+          <div class="event-cell-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+            </svg>
+          </div>
+          <h4>Corporate Events</h4>
+          <p>Professional catering for office gatherings</p>
+        </div>
+        <div class="event-cell">
+          <div class="event-cell-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h4>Religious Functions</h4>
+          <p>Satvik, pure veg for pooja and more</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section reveal">
+      <div class="gallery-head">
+        <div class="eyebrow">Our Work</div>
+        <h2 class="heading">See Us in Action</h2>
+        <p class="subheading">
+          Real events, real setups. A glimpse of Shiv Caterers at work across
+          Pune and PCMC.
+        </p>
+      </div>
+      <div class="gallery-track-wrap">
+        <div class="gallery-track" id="galleryTrack">
+          <div class="gallery-slide">
+            <img
+              src="Image 1.jpeg"
+              alt="Indoor buffet setup with golden chafing dishes"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              src="Image 2.png"
+              alt="Outdoor catering — round tables with pink covers and white chair covers"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              src="images/event2.jpg"
+              alt="Outdoor event setup with buffet counter at the rear"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              src="images/event3.jpg"
+              alt="Event setup showing full buffet arrangement"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              src="images/event-buffet.jpg"
+              alt="Professional buffet counter with golden serving dishes"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="gallery-controls">
+        <button class="gallery-btn" id="galleryPrev" aria-label="Previous">
+          <svg viewBox="0 0 24 24"><polyline points="15,18 9,12 15,6" /></svg>
+        </button>
+        <div class="gallery-dots" id="galleryDots"></div>
+        <button class="gallery-btn" id="galleryNext" aria-label="Next">
+          <svg viewBox="0 0 24 24"><polyline points="9,18 15,12 9,6" /></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- MENU PREVIEW -->
+    <section class="menu-preview reveal">
+      <div class="menu-preview-inner">
+        <div class="text-center">
+          <div class="eyebrow">Our Menu</div>
+          <h2 class="heading">150+ Dishes Across Every Category</h2>
+          <p class="subheading">
+            From welcome drinks to desserts — a vast variety of authentic
+            vegetarian dishes for every palate and occasion.
+          </p>
+        </div>
+        <div class="menu-cats">
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M17 8C8 10 5.9 16.17 3.82 22" />
+                <path d="M9.1 8c.6 2.4 0 4.7-1.1 6.5" />
+                <path d="M20 22c-1.68-2.51-1.71-5.66-.56-9" />
+              </svg>
+            </div>
+            <span class="mc-name">Welcome Drinks</span
+            ><span class="mc-count">11 drinks</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2a10 10 0 100 20A10 10 0 0012 2zM4.93 4.93l14.14 14.14"
+                />
+              </svg>
+            </div>
+            <span class="mc-name">Soups</span
+            ><span class="mc-count">5 soups</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </div>
+            <span class="mc-name">Starters</span
+            ><span class="mc-count">5 items</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M18 8h1a4 4 0 010 8h-1" />
+                <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" />
+                <line x1="6" y1="1" x2="6" y2="4" />
+                <line x1="10" y1="1" x2="10" y2="4" />
+                <line x1="14" y1="1" x2="14" y2="4" />
+              </svg>
+            </div>
+            <span class="mc-name">Paneer Dishes</span
+            ><span class="mc-count">21 dishes</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 11l19-9-9 19-2-8-8-2z" />
+              </svg>
+            </div>
+            <span class="mc-name">Veg Mains</span
+            ><span class="mc-count">9 dishes</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              </svg>
+            </div>
+            <span class="mc-name">Dal Varieties</span
+            ><span class="mc-count">9 options</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"
+                />
+              </svg>
+            </div>
+            <span class="mc-name">Rice &amp; Pulav</span
+            ><span class="mc-count">10 options</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"
+                />
+                <path
+                  d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
+                />
+                <path
+                  d="M9.5 14.5c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.83 8 21v-5c0-.83.67-1.5 1.5-1.5z"
+                />
+                <path
+                  d="M3.5 14H5v1.5C5 16.33 4.33 17 3.5 17S2 16.33 2 15.5 2.67 14 3.5 14z"
+                />
+                <path
+                  d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"
+                />
+                <path
+                  d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"
+                />
+                <path
+                  d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"
+                />
+                <path
+                  d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"
+                />
+              </svg>
+            </div>
+            <span class="mc-name">Roti &amp; Breads</span
+            ><span class="mc-count">10 options</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"
+                />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <span class="mc-name">Sweets</span
+            ><span class="mc-count">27+ items</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"
+                />
+              </svg>
+            </div>
+            <span class="mc-name">Chaat Counter</span
+            ><span class="mc-count">5 items</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8m-4-4v4" />
+              </svg>
+            </div>
+            <span class="mc-name">Chinese</span
+            ><span class="mc-count">5 items</span>
+          </a>
+          <a href="menu.html" class="menu-cat">
+            <div class="mc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <span class="mc-name">Ice Cream</span
+            ><span class="mc-count">2 options</span>
+          </a>
+        </div>
+        <div class="menu-cta-strip">
+          <div>
+            <h3>Build Your Custom Menu</h3>
+            <p>
+              Choose exactly the dishes you want and get an instant WhatsApp
+              quote.
+            </p>
+          </div>
+          <div class="menu-cta-btns">
+            <a
+              href="customize-menu.html"
+              class="btn btn-ghost"
+              style="border-color: rgba(255, 255, 255, 0.35)"
+              >Customize Menu</a
+            >
+            <a
+              href="menu.html"
+              class="btn"
+              style="
+                background: var(--gold);
+                border-color: var(--gold);
+                color: var(--wine-deep);
+              "
+              >View Full Menu</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="packages-section reveal">
+      <div class="container text-center">
+        <div class="eyebrow">Pricing</div>
+        <h2 class="heading">Simple, Transparent Packages</h2>
+        <p class="subheading">
+          All packages include buffet setup, round tables, chairs, mineral
+          water, and papad with lonche. No hidden charges.
+        </p>
+      </div>
+      <div class="packages-grid">
+        <div class="pkg">
+          <div class="pkg-name">Regular Thali</div>
+          <div class="pkg-price">₹200 <span>/ plate</span></div>
+          <div class="pkg-divider"></div>
+          <div class="pkg-label">What's Included</div>
+          <div class="pkg-items">
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              1 Sweet
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              1 Gravy Vegetable
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              1 Dry Vegetable
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Rice + Dal
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Puri / Chapati
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Papad + Lonche
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Salad, Water, Badishep
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Buffet Setup + Furniture
+            </div>
+          </div>
+        </div>
+        <div class="pkg featured">
+          <div class="pkg-popular">Most Popular</div>
+          <div class="pkg-name">Special Thali</div>
+          <div class="pkg-price">₹240 <span>/ plate</span></div>
+          <div class="pkg-divider"></div>
+          <div class="pkg-label">Everything in Regular, Plus</div>
+          <div class="pkg-items">
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              1 Starter
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              1 Welcome Drink
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              All Regular Items
+            </div>
+          </div>
+          <div style="margin-top: 1.5rem">
+            <a
+              href="https://wa.me/919130192121?text=I%20am%20interested%20in%20the%20Special%20Thali%20package."
+              class="btn btn-wa"
+              style="width: 100%; justify-content: center"
+              target="_blank"
+              rel="noopener"
+              >Inquire Now</a
+            >
+          </div>
+        </div>
+        <div class="pkg">
+          <div class="pkg-name">Deluxe Thali</div>
+          <div class="pkg-price">₹300 <span>/ plate</span></div>
+          <div class="pkg-divider"></div>
+          <div class="pkg-label">Premium Full Package</div>
+          <div class="pkg-items">
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Starter + Welcome Drink
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Sweet + Ice Cream
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Chaat Counter
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Gravy + Dry Veg
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Rice + Dal + Bread
+            </div>
+            <div class="pkg-item">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20,6 9,17 4,12" />
+              </svg>
+              Full Buffet Setup
+            </div>
+          </div>
+          <p class="pkg-note">
+            Service charge of ₹3,000 applies for events under 100 guests.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews-section reveal">
+      <div class="container text-center">
+        <div class="eyebrow">Testimonials</div>
+        <h2 class="heading">Trusted by Pune Families</h2>
+        <div class="google-proof">
+          <svg viewBox="0 0 24 24" width="16" height="16">
+            <path
+              d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+              fill="#4285F4"
+            />
+            <path
+              d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+              fill="#34A853"
+            />
+            <path
+              d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+              fill="#FBBC05"
+            />
+            <path
+              d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+              fill="#EA4335"
+            />
+          </svg>
+          4.8 Stars · Google Reviews
+        </div>
+      </div>
+      <div class="reviews-grid container">
+        <div class="review">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              />
+            </svg>
+          </div>
+          <p class="review-text">
+            "Excellent catering for my daughter's wedding. Food was fresh,
+            delicious, and served perfectly on time. Staff was very
+            professional. We had 300 guests and everyone was thoroughly
+            satisfied."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">RS</div>
+            <div>
+              <div class="review-name">Ramesh Shinde</div>
+              <div class="review-event">Wedding · Chinchwad</div>
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              />
+            </svg>
+          </div>
+          <p class="review-text">
+            "Hired Shiv Caterers for our Vastu Shanti. Kashiramji personally
+            managed everything. The variety of dishes was excellent and the
+            setup was very clean and professional."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">PM</div>
+            <div>
+              <div class="review-name">Priya Mahajan</div>
+              <div class="review-event">Housewarming · Ravet</div>
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              /></svg
+            ><svg viewBox="0 0 24 24">
+              <polygon
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              />
+            </svg>
+          </div>
+          <p class="review-text">
+            "Birthday party catering was superb. Food was hot and tasty
+            throughout the event. Very reasonable pricing for the quality. Will
+            definitely use again."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">SK</div>
+            <div>
+              <div class="review-name">Sanjay Kulkarni</div>
+              <div class="review-event">Birthday Party · Pune</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section reveal">
+      <div class="container text-center">
+        <div class="eyebrow">FAQ</div>
+        <h2 class="heading">Common Questions</h2>
+      </div>
+      <div class="faq-inner container">
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              What is the minimum guest count?<span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-a">
+              We accommodate events from 50 guests upwards. For events below 100
+              guests, an additional service charge of ₹3,000 applies.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Do you provide setup — tables, chairs, utensils?<span
+                class="faq-toggle"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              Yes. All packages include buffet setup, round tables, chairs,
+              chafing dishes, and serving utensils. Everything is arranged by
+              us.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Are you strictly 100% pure vegetarian?<span class="faq-toggle"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              Absolutely. Shiv Caterers is 100% pure vegetarian with no
+              exceptions. Our kitchen and all equipment are exclusively veg.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can I customize my menu?<span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-a">
+              Yes — use our Customize Menu page to select from 150+ dishes and
+              receive a personalized WhatsApp quote within hours.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Which areas of Pune do you serve?<span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-a">
+              We serve all of Pune and PCMC — Chinchwad, Pimpri, Ravet, Akurdi,
+              Hinjewadi, Wakad, Aundh, Baner, Kothrud, Hadapsar and beyond.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="cta-band">
+      <div class="cta-band-inner">
+        <div
+          class="eyebrow"
+          style="color: var(--gold-light); justify-content: center"
+        >
+          Ready to Book?
+        </div>
+        <h2>Let's Plan Your Celebration Together</h2>
+        <p>
+          Call us or WhatsApp for a free consultation and personalized quote.
+          We'd love to cater your event.
+        </p>
+        <div class="cta-band-btns">
+          <a
+            href="https://wa.me/919130192121?text=Hello%20Shiv%20Caterers%2C%20I%20want%20to%20discuss%20catering."
+            class="btn btn-wa"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            WhatsApp: 9130192121
+          </a>
+          <a href="tel:+918308041799" class="btn btn-ghost">Call: 8308041799</a>
+          <a href="contact.html" class="btn btn-ghost">View Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 0">
+            <div class="logo-mark">
+              <svg viewBox="0 0 38 38">
+                <rect width="38" height="38" rx="4" fill="#5E1212" />
+                <rect x="6" y="5" width="26" height="1.2" fill="#A87C2A" />
+                <text
+                  x="19"
+                  y="26"
+                  text-anchor="middle"
+                  font-family="Georgia,serif"
+                  font-size="16"
+                  font-weight="600"
+                  fill="#C8A84A"
+                  letter-spacing="-0.5"
+                >
+                  SC
+                </text>
+                <rect x="6" y="31.8" width="26" height="1.2" fill="#A87C2A" />
+              </svg>
+            </div>
+            <div>
+              <span class="logo-name">Shiv Caterers</span
+              ><span class="logo-sub">Pure Vegetarian</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Trusted pure vegetarian catering for weddings, birthday parties,
+            munj, housewarming and all family celebrations across Pune and PCMC.
+          </p>
+          <div class="footer-contacts">
+            <a href="tel:+919130192121" class="footer-contact-item"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.07 6.07l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                /></svg
+              >9130192121</a
+            >
+            <a href="tel:+918308041799" class="footer-contact-item"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.07 6.07l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                /></svg
+              >8308041799</a
+            >
+            <a
+              href="mailto:shivcaterers2121@gmail.com"
+              class="footer-contact-item"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" /></svg
+              >shivcaterers2121@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="customize-menu.html">Customize Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Events We Serve</h5>
+          <ul>
+            <li><a href="contact.html">Wedding Catering</a></li>
+            <li><a href="contact.html">Birthday Parties</a></li>
+            <li><a href="contact.html">Housewarming / Vastu</a></li>
+            <li><a href="contact.html">Munj Ceremony</a></li>
+            <li><a href="contact.html">Dohale Jevan</a></li>
+            <li><a href="contact.html">Corporate Events</a></li>
+            <li><a href="contact.html">Religious Functions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Shiv Caterers — Kashiram Supekar, Pune, Maharashtra</span>
+        <div class="footer-veg">
+          <div class="footer-veg-dot"></div>
+          100% Pure Veg
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/919130192121"
+      class="wa-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
