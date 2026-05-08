@@ -70,15 +70,18 @@
         height: 100%;
         object-fit: cover;
         object-position: center 40%;
+        filter: brightness(0.62) saturate(0.9);
       }
       .hero-overlay {
         position: absolute;
         inset: 0;
+        backdrop-filter: saturate(120%);
         background: linear-gradient(
-          105deg,
-          rgba(10, 18, 44, 0.92) 0%,
-          rgba(18, 32, 69, 0.82) 50%,
-          rgba(35, 52, 110, 0.52) 100%
+          115deg,
+          rgba(6, 12, 34, 0.98) 0%,
+          rgba(10, 20, 52, 0.95) 32%,
+          rgba(20, 35, 78, 0.9) 62%,
+          rgba(45, 65, 135, 0.74) 100%
         );
       }
       .hero-content {
@@ -432,13 +435,12 @@
         transition: var(--t);
       }
       .menu-cta-strip {
-        background:
-linear-gradient(
-135deg,
-#142045 0%,
-#1E2A5A 55%,
-#2E3F78 100%
-);
+        background: linear-gradient(
+          135deg,
+          #142045 0%,
+          #1e2a5a 55%,
+          #2e3f78 100%
+        );
         border-radius: var(--r-md);
         padding: 3rem 2.5rem;
         display: flex;
