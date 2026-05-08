@@ -13,7 +13,13 @@
     /* ── HERO ── */
     .cust-hero {
       margin-top: 70px; padding: 4.5rem 5% 3.5rem;
-      background: var(--wine-deep); text-align: center;
+      background:
+linear-gradient(
+135deg,
+#142045 0%,
+#1E2A5A 55%,
+#2E3F78 100%
+); text-align: center;
       position: relative; overflow: hidden;
     }
     .cust-hero::before {
@@ -92,7 +98,7 @@
     .cat-header:hover .cat-name { color: var(--wine); }
     .cat-hicon {
       width: 32px; height: 32px; border-radius: var(--r-sm);
-      background: var(--cream); display: flex; align-items: center; justify-content: center;
+      background: rgba(30,42,90,0.08); display: flex; align-items: center; justify-content: center;
       flex-shrink: 0; color: var(--wine-mid);
     }
     .cat-hicon svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; }
@@ -221,7 +227,7 @@
 <nav class="site-nav" id="siteNav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <div class="logo-mark"><svg viewBox="0 0 38 38"><rect width="38" height="38" rx="4" fill="#3A0808"/><rect x="6" y="5" width="26" height="1.2" fill="#A87C2A"/><text x="19" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="600" fill="#C8A84A" letter-spacing="-0.5">SC</text><rect x="6" y="31.8" width="26" height="1.2" fill="#A87C2A"/></svg></div>
+      <div class="logo-mark"><svg viewBox="0 0 38 38"><rect width="38" height="38" rx="4" fill="#142045"/><rect x="6" y="5" width="26" height="1.2" fill="#A87C2A"/><text x="19" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="600" fill="#D9BC84" letter-spacing="-0.5">SC</text><rect x="6" y="31.8" width="26" height="1.2" fill="#A87C2A"/></svg></div>
       <div><span class="logo-name">Shiv Caterers</span><span class="logo-sub">Pure Vegetarian</span></div>
     </a>
     <nav class="nav-links">
