@@ -1,770 +1,1094 @@
-
-Copy
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Menu | Shiv Caterers — Pure Veg Catering Pune</title>
-  <meta name="description" content="Explore the complete pure vegetarian catering menu of Shiv Caterers Pune — 150+ dishes including paneer specialities, sweets, dal, rice, starters, chaat and much more." />
-  <meta name="keywords" content="pure veg catering menu Pune, vegetarian catering menu, Shiv Caterers menu, wedding catering menu Pune, Maharashtrian catering" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://shivcaterers.in/menu.html" />
-  <meta property="og:title" content="Our Complete Menu — Shiv Caterers Pure Veg Catering Pune" />
-  <meta property="og:description" content="150+ vegetarian dishes for weddings, birthday parties and all family events in Pune. View our full catering menu." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="style.css" />
- 
-  <style>
-    /* =====================================================
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Menu | Shiv Caterers — Pure Veg Catering Pune</title>
+    <meta
+      name="description"
+      content="Explore the complete pure vegetarian catering menu of Shiv Caterers Pune — 150+ dishes including paneer specialities, sweets, dal, rice, starters, chaat and much more."
+    />
+    <meta
+      name="keywords"
+      content="pure veg catering menu Pune, vegetarian catering menu, Shiv Caterers menu, wedding catering menu Pune, Maharashtrian catering"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://shivcaterers.in/menu.html" />
+    <meta
+      property="og:title"
+      content="Our Complete Menu — Shiv Caterers Pure Veg Catering Pune"
+    />
+    <meta
+      property="og:description"
+      content="150+ vegetarian dishes for weddings, birthday parties and all family events in Pune. View our full catering menu."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* =====================================================
        MENU PAGE — PAGE-SPECIFIC STYLES
        Shiv Caterers v2 | menu.html
        ===================================================== */
- 
-    /* ── HERO ── */
-    .menu-hero {
-      margin-top: 70px;
-      position: relative;
-      height: 82vh;
-      min-height: 520px;
-      max-height: 800px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      overflow: hidden;
-    }
-    .menu-hero__bg {
-      position: absolute; inset: 0;
-    }
-    .menu-hero__bg img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      object-position: center 35%;
-    }
-    .menu-hero__overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(36,6,6,0.86) 0%,
-        rgba(46,10,10,0.80) 50%,
-        rgba(26,4,4,0.90) 100%
-      );
-    }
-    .menu-hero__overlay::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(
-        ellipse at 50% 38%,
-        rgba(168,124,42,0.13) 0%,
-        transparent 58%
-      );
-    }
-    .menu-hero__content {
-      position: relative; z-index: 2;
-      padding: 0 5%;
-      max-width: 840px;
-    }
-    .menu-hero__eyebrow {
-      display: inline-flex; align-items: center; gap: 1rem;
-      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase;
-      color: var(--gold-light);
-      margin-bottom: 2rem;
-    }
-    .menu-hero__eyebrow::before,
-    .menu-hero__eyebrow::after {
-      content: ''; width: 36px; height: 1px;
-      background: currentColor; opacity: 0.5;
-    }
-    .menu-hero__title {
-      font-family: var(--font-h);
-      font-size: clamp(2.8rem, 6.5vw, 5.4rem);
-      font-weight: 500; line-height: 1.08;
-      color: var(--white);
-      margin-bottom: 1.5rem;
-    }
-    .menu-hero__title em {
-      font-style: italic;
-      color: var(--gold-light);
-    }
-    .menu-hero__sub {
-      font-size: 0.96rem;
-      color: rgba(255,255,255,0.60);
-      line-height: 1.85; letter-spacing: 0.02em;
-      max-width: 600px; margin: 0 auto 3rem;
-    }
-    .menu-hero__scroll {
-      display: flex; align-items: center; justify-content: center; gap: 0.8rem;
-      font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
-    }
-    .menu-hero__scroll-line {
-      width: 44px; height: 1px;
-      background: rgba(255,255,255,0.2);
-      position: relative; overflow: hidden;
-    }
-    .menu-hero__scroll-line::after {
-      content: ''; position: absolute; top: 0; left: -100%;
-      width: 100%; height: 100%;
-      background: var(--gold-light);
-      animation: scrollPan 2.8s ease-in-out infinite;
-    }
-    @keyframes scrollPan {
-      0%   { left: -100%; }
-      100% { left:  100%; }
-    }
- 
-    /* ── STICKY CATEGORY NAV ── */
-    .menu-cat-nav {
-      position: sticky; top: 70px; z-index: 500;
-      background: var(--white);
-      border-bottom: 1px solid var(--cream-3);
-      overflow-x: auto; -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
-    .menu-cat-nav::-webkit-scrollbar { display: none; }
-    .menu-cat-nav-inner {
-      display: flex; align-items: stretch;
-      padding: 0 5%;
-      white-space: nowrap;
-      min-width: max-content;
-    }
-    .cat-nav-link {
-      display: inline-flex; align-items: center;
-      padding: 0.95rem 1rem;
-      font-size: 0.70rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--text-light);
-      border-bottom: 2px solid transparent;
-      transition: var(--t);
-      white-space: nowrap; text-decoration: none;
-      flex-shrink: 0;
-    }
-    .cat-nav-link:hover {
-      color: var(--wine);
-      border-bottom-color: var(--gold);
-    }
-    .cat-nav-link.active {
-      color: var(--wine);
-      border-bottom-color: var(--wine);
-    }
- 
-    /* ── PURE VEG STRIP ── */
-    .veg-strip {
-      background: rgba(42,94,42,0.05);
-      border-bottom: 1px solid rgba(42,94,42,0.12);
-    }
-    .veg-strip-inner {
-      max-width: 1160px; margin: 0 auto; padding: 0.9rem 5%;
-      display: flex; align-items: center; justify-content: center;
-      gap: 2rem; flex-wrap: wrap;
-    }
-    .veg-strip-item {
-      display: flex; align-items: center; gap: 0.55rem;
-      font-size: 0.76rem; font-weight: 600;
-      color: var(--green);
-    }
-    .veg-strip-item svg {
-      width: 14px; height: 14px;
-      stroke: currentColor; fill: none; stroke-width: 2.5;
-      stroke-linecap: round; stroke-linejoin: round;
-      flex-shrink: 0;
-    }
-    .veg-strip-sep { width: 1px; height: 16px; background: rgba(42,94,42,0.2); }
-    .veg-strip-note {
-      font-size: 0.74rem; color: var(--text-light);
-      font-style: italic; font-weight: 400;
-    }
 
- 
-    /* ── INDIVIDUAL CATEGORY SECTION ── */
-    .m-section {
-      padding: 5.5rem 5% 4.5rem;
-      scroll-margin-top: 128px;
-    }
-    .m-section:nth-child(odd)  { background: var(--ivory); }
-    .m-section:nth-child(even) { background: var(--cream); }
-    .m-section-inner {
-      max-width: 1160px; margin: 0 auto;
-    }
- 
-    /* Category section header */
-    .m-section-head {
-      display: flex; align-items: center; gap: 1.75rem;
-      padding-bottom: 1.75rem;
-      border-bottom: 1px solid var(--cream-3);
-      margin-bottom: 2.75rem;
-    }
-    .m-cat-circle {
-      width: 70px; height: 70px; border-radius: 50%;
-      border: 2px solid var(--gold);
-      background: linear-gradient(135deg, var(--cream-2) 0%, var(--ivory) 100%);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      box-shadow: 0 4px 18px rgba(168,124,42,0.18);
-      transition: transform var(--t), box-shadow var(--t);
-    }
-    .m-cat-circle:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(168,124,42,0.28);
-    }
-    .m-cat-circle svg {
-      width: 28px; height: 28px;
-      stroke: var(--wine); fill: none;
-      stroke-width: 1.55; stroke-linecap: round; stroke-linejoin: round;
-    }
-    .m-cat-meta { flex: 1; min-width: 0; }
-    .m-cat-name {
-      font-family: var(--font-h);
-      font-size: clamp(1.7rem, 3.2vw, 2.4rem);
-      font-weight: 500; line-height: 1.1;
-      color: var(--wine-deep);
-      margin-bottom: 0.2rem;
-    }
-    .m-cat-subtitle {
-      font-size: 0.78rem; color: var(--text-light);
-      font-style: italic; line-height: 1.4;
-    }
-    .m-cat-badges {
-      display: flex; align-items: center; gap: 0.5rem;
-      margin-left: auto; flex-shrink: 0;
-    }
-    .m-cat-count {
-      font-size: 0.63rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--text-light); background: var(--cream-2);
-      padding: 4px 10px; border-radius: 2px;
-    }
-    .m-cat-premium-tag {
-      font-size: 0.60rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--gold); border: 1px solid var(--gold-pale); background: var(--gold-pale);
-      padding: 4px 8px; border-radius: 2px;
-    }
- 
-    /* Dishes grid */
-    .m-dishes-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-    }
-    .m-dish-row {
-      display: flex; align-items: center;
-      padding: 0.82rem 2rem 0.82rem 0;
-      border-bottom: 1px solid rgba(228,208,180,0.55);
-      gap: 0.75rem;
-      transition: transform var(--t), background var(--t);
-      cursor: default;
-    }
-    .m-dish-row:nth-child(even) {
-      padding-left: 1.75rem;
-      padding-right: 0;
-      border-left: 1px solid rgba(228,208,180,0.55);
-    }
-    .m-dish-row:hover {
-      transform: translateX(4px);
-    }
-    .m-dish-row:nth-child(even):hover {
-      transform: translateX(-4px);
-    }
-    .m-dish-row:hover .m-dish-name { color: var(--wine-deep); }
- 
-    .m-dish-dot {
-      width: 7px; height: 7px; border-radius: 50%;
-      background: var(--green); flex-shrink: 0;
-      transition: transform var(--t);
-    }
-    .m-dish-row.premium .m-dish-dot {
-      background: var(--gold);
-    }
-    .m-dish-row:hover .m-dish-dot { transform: scale(1.4); }
- 
-    .m-dish-name {
-      font-size: 0.88rem; color: var(--text-mid);
-      line-height: 1.4; flex: 1;
-      transition: color var(--t);
-    }
-    .m-dish-special {
-      font-size: 0.60rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--gold); font-style: italic;
-      white-space: nowrap; flex-shrink: 0;
-      opacity: 0.85;
-    }
- 
-    /* Odd item count filler */
-    .m-dish-filler {
-      border-left: 1px solid rgba(228,208,180,0.55);
-      border-bottom: 1px solid rgba(228,208,180,0.55);
-    }
- 
-    /* ── BOTTOM CTA ── */
-    .menu-cta-section {
-      background: var(--wine-deep);
-      padding: 7rem 5%;
-      text-align: center;
-      position: relative; overflow: hidden;
-    }
-    .menu-cta-section::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse at center, rgba(168,124,42,0.10) 0%, transparent 62%);
-      pointer-events: none;
-    }
-    .menu-cta-inner {
-      position: relative; z-index: 1;
-      max-width: 600px; margin: 0 auto;
-    }
-    .menu-cta-eyebrow {
-      display: inline-flex; align-items: center; gap: 0.75rem;
-      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase;
-      color: var(--gold-light);
-      margin-bottom: 1.5rem;
-    }
-    .menu-cta-eyebrow::before,
-    .menu-cta-eyebrow::after {
-      content: ''; width: 26px; height: 1px;
-      background: currentColor; opacity: 0.45;
-    }
-    .menu-cta-h2 {
-      font-family: var(--font-h);
-      font-size: clamp(2rem, 4.5vw, 3.4rem);
-      font-weight: 500; color: var(--white);
-      line-height: 1.15; margin-bottom: 1rem;
-    }
-    .menu-cta-p {
-      font-size: 0.92rem;
-      color: rgba(255,255,255,0.50);
-      line-height: 1.8; margin-bottom: 2.5rem;
-    }
-    .menu-cta-btns {
-      display: flex; justify-content: center;
-      gap: 0.85rem; flex-wrap: wrap;
-    }
- 
-    /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      .m-section-head { gap: 1.25rem; }
-      .m-cat-badges { display: none; }
-    }
-    @media (max-width: 768px) {
-      .menu-hero { height: 70vh; min-height: 480px; }
-      .menu-hero__title { font-size: clamp(2.2rem, 7vw, 3rem); }
-      .menu-hero__sub { font-size: 0.88rem; }
-      .m-section { padding: 3.5rem 5% 3rem; }
-      .m-section-head { gap: 1rem; }
-      .m-cat-circle { width: 56px; height: 56px; }
-      .m-cat-circle svg { width: 22px; height: 22px; }
-      .m-dishes-grid { grid-template-columns: 1fr; }
-      .m-dish-row:nth-child(even) { padding-left: 0; border-left: none; }
-      .m-dish-row { padding-right: 0; }
-      .m-dish-row:hover { transform: translateX(3px); }
-      .m-dish-row:nth-child(even):hover { transform: translateX(3px); }
-      .veg-strip-sep { display: none; }
-    }
-    @media (max-width: 480px) {
-      .menu-hero { height: 60vh; }
-      .menu-cta-section { padding: 5rem 5%; }
-    }
-  </style>
-</head>
-<body>
- 
-<!-- ======================================================
+      /* ── HERO ── */
+      .menu-hero {
+        margin-top: 70px;
+        position: relative;
+        height: 82vh;
+        min-height: 520px;
+        max-height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+      }
+      .menu-hero__bg {
+        position: absolute;
+        inset: 0;
+      }
+      .menu-hero__bg img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(0.62) saturate(0.92);
+        object-fit: cover;
+        object-position: center 35%;
+      }
+      .menu-hero__overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          115deg,
+          rgba(6, 12, 34, 0.96) 0%,
+          rgba(10, 20, 52, 0.93) 34%,
+          rgba(18, 34, 78, 0.88) 65%,
+          rgba(35, 58, 120, 0.72) 100%
+        );
+      }
+      .menu-hero__overlay::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at 50% 38%,
+          rgba(198, 161, 91, 0.12) transparent 58%
+        );
+      }
+      .menu-hero__content {
+        position: relative;
+        z-index: 2;
+        padding: 0 5%;
+        max-width: 840px;
+      }
+      .menu-hero__eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.64rem;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold-light);
+        margin-bottom: 2rem;
+      }
+      .menu-hero__eyebrow::before,
+      .menu-hero__eyebrow::after {
+        content: "";
+        width: 36px;
+        height: 1px;
+        background: currentColor;
+        opacity: 0.5;
+      }
+      .menu-hero__title {
+        font-family: var(--font-h);
+        font-size: clamp(2.8rem, 6.5vw, 5.4rem);
+        font-weight: 500;
+        line-height: 1.08;
+        color: var(--white);
+        margin-bottom: 1.5rem;
+      }
+      .menu-hero__title em {
+        font-style: italic;
+        color: var(--gold-light);
+      }
+      .menu-hero__sub {
+        font-size: 0.96rem;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.85;
+        letter-spacing: 0.02em;
+        max-width: 600px;
+        margin: 0 auto 3rem;
+      }
+      .menu-hero__scroll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        font-size: 0.62rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.35);
+      }
+      .menu-hero__scroll-line {
+        width: 44px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.2);
+        position: relative;
+        overflow: hidden;
+      }
+      .menu-hero__scroll-line::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--gold-light);
+        animation: scrollPan 2.8s ease-in-out infinite;
+      }
+      @keyframes scrollPan {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      /* ── STICKY CATEGORY NAV ── */
+      .menu-cat-nav {
+        position: sticky;
+        top: 70px;
+        z-index: 500;
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--cream-3);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .menu-cat-nav::-webkit-scrollbar {
+        display: none;
+      }
+      .menu-cat-nav-inner {
+        display: flex;
+        align-items: stretch;
+        padding: 0 5%;
+        white-space: nowrap;
+        min-width: max-content;
+      }
+      .cat-nav-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.95rem 1rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--text-light);
+        border-bottom: 2px solid transparent;
+        transition: var(--t);
+        white-space: nowrap;
+        text-decoration: none;
+        flex-shrink: 0;
+      }
+      .cat-nav-link:hover {
+        color: var(--wine);
+        border-bottom-color: var(--gold);
+      }
+      .cat-nav-link.active {
+        color: var(--wine-deep);
+        border-bottom-color: var(--gold);
+        background: rgba(30, 42, 90, 0.04);
+      }
+
+      /* ── PURE VEG STRIP ── */
+      .veg-strip {
+        background: rgba(30, 42, 90, 0.035);
+        border-bottom: 1px solid rgba(42, 94, 42, 0.12);
+      }
+      .veg-strip-inner {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0.9rem 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      .veg-strip-item {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        font-size: 0.76rem;
+        font-weight: 600;
+        color: var(--wine-mid);
+      }
+      .veg-strip-item svg {
+        width: 14px;
+        height: 14px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        flex-shrink: 0;
+      }
+      .veg-strip-sep {
+        width: 1px;
+        height: 16px;
+        background: rgba(42, 94, 42, 0.2);
+      }
+      .veg-strip-note {
+        font-size: 0.74rem;
+        color: var(--text-light);
+        font-style: italic;
+        font-weight: 400;
+      }
+
+      /* ── INDIVIDUAL CATEGORY SECTION ── */
+      .m-section {
+        padding: 5.5rem 5% 4.5rem;
+        scroll-margin-top: 128px;
+      }
+      .m-section:nth-child(odd) {
+        background: var(--ivory);
+      }
+      .m-section:nth-child(even) {
+        background: var(--cream);
+      }
+      .m-section-inner {
+        max-width: 1160px;
+        margin: 0 auto;
+      }
+
+      /* Category section header */
+      .m-section-head {
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+        padding-bottom: 1.75rem;
+        border-bottom: 1px solid var(--cream-3);
+        margin-bottom: 2.75rem;
+      }
+      .m-cat-circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 2px solid var(--gold);
+        background: linear-gradient(
+          135deg,
+          rgba(30, 42, 90, 0.05) 0%,
+          rgba(255, 255, 255, 0.95) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 0 4px 18px rgba(168, 124, 42, 0.18);
+        transition:
+          transform var(--t),
+          box-shadow var(--t);
+      }
+      .m-cat-circle:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(168, 124, 42, 0.28);
+      }
+      .m-cat-circle svg {
+        width: 28px;
+        height: 28px;
+        stroke: var(--wine);
+        fill: none;
+        stroke-width: 1.55;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .m-cat-meta {
+        flex: 1;
+        min-width: 0;
+      }
+      .m-cat-name {
+        font-family: var(--font-h);
+        font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+        font-weight: 500;
+        line-height: 1.1;
+        color: var(--wine-deep);
+        margin-bottom: 0.2rem;
+      }
+      .m-cat-subtitle {
+        font-size: 0.78rem;
+        color: var(--text-light);
+        font-style: italic;
+        line-height: 1.4;
+      }
+      .m-cat-badges {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-left: auto;
+        flex-shrink: 0;
+      }
+      .m-cat-count {
+        font-size: 0.63rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--text-light);
+        background: var(--cream-2);
+        padding: 4px 10px;
+        border-radius: 2px;
+      }
+      .m-cat-premium-tag {
+        font-size: 0.6rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--gold);
+        border: 1px solid var(--gold-pale);
+        background: var(--gold-pale);
+        padding: 4px 8px;
+        border-radius: 2px;
+      }
+
+      /* Dishes grid */
+      .m-dishes-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+      }
+      .m-dish-row {
+        display: flex;
+        align-items: center;
+        padding: 0.82rem 2rem 0.82rem 0;
+        border-bottom: 1px solid rgba(228, 208, 180, 0.55);
+        gap: 0.75rem;
+        transition:
+          transform var(--t),
+          background var(--t);
+        cursor: default;
+      }
+      .m-dish-row:nth-child(even) {
+        padding-left: 1.75rem;
+        padding-right: 0;
+        border-left: 1px solid rgba(228, 208, 180, 0.55);
+      }
+      .m-dish-row:hover {
+        transform: translateX(4px);
+      }
+      .m-dish-row:nth-child(even):hover {
+        transform: translateX(-4px);
+      }
+      .m-dish-row:hover .m-dish-name {
+        color: var(--wine-deep);
+      }
+
+      .m-dish-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--green);
+        flex-shrink: 0;
+        transition: transform var(--t);
+      }
+      .m-dish-row.premium .m-dish-dot {
+        background: var(--gold);
+      }
+      .m-dish-row:hover .m-dish-dot {
+        transform: scale(1.4);
+      }
+
+      .m-dish-name {
+        font-size: 0.88rem;
+        color: var(--text-mid);
+        line-height: 1.4;
+        flex: 1;
+        transition: color var(--t);
+      }
+      .m-dish-special {
+        font-size: 0.6rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--gold);
+        font-style: italic;
+        white-space: nowrap;
+        flex-shrink: 0;
+        opacity: 0.85;
+      }
+
+      /* Odd item count filler */
+      .m-dish-filler {
+        border-left: 1px solid rgba(228, 208, 180, 0.55);
+        border-bottom: 1px solid rgba(228, 208, 180, 0.55);
+      }
+
+      /* ── BOTTOM CTA ── */
+      .menu-cta-section {
+        background: var(--wine-deep);
+        padding: 7rem 5%;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .menu-cta-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(168, 124, 42, 0.1) 0%,
+          transparent 62%
+        );
+        pointer-events: none;
+      }
+      .menu-cta-inner {
+        position: relative;
+        z-index: 1;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .menu-cta-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.64rem;
+        font-weight: 700;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--gold-light);
+        margin-bottom: 1.5rem;
+      }
+      .menu-cta-eyebrow::before,
+      .menu-cta-eyebrow::after {
+        content: "";
+        width: 26px;
+        height: 1px;
+        background: currentColor;
+        opacity: 0.45;
+      }
+      .menu-cta-h2 {
+        font-family: var(--font-h);
+        font-size: clamp(2rem, 4.5vw, 3.4rem);
+        font-weight: 500;
+        color: var(--white);
+        line-height: 1.15;
+        margin-bottom: 1rem;
+      }
+      .menu-cta-p {
+        font-size: 0.92rem;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+      }
+      .menu-cta-btns {
+        display: flex;
+        justify-content: center;
+        gap: 0.85rem;
+        flex-wrap: wrap;
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 900px) {
+        .m-section-head {
+          gap: 1.25rem;
+        }
+        .m-cat-badges {
+          display: none;
+        }
+      }
+      @media (max-width: 768px) {
+        .menu-hero {
+          height: 70vh;
+          min-height: 480px;
+        }
+        .menu-hero__title {
+          font-size: clamp(2.2rem, 7vw, 3rem);
+        }
+        .menu-hero__sub {
+          font-size: 0.88rem;
+        }
+        .m-section {
+          padding: 3.5rem 5% 3rem;
+        }
+        .m-section-head {
+          gap: 1rem;
+        }
+        .m-cat-circle {
+          width: 56px;
+          height: 56px;
+        }
+        .m-cat-circle svg {
+          width: 22px;
+          height: 22px;
+        }
+        .m-dishes-grid {
+          grid-template-columns: 1fr;
+        }
+        .m-dish-row:nth-child(even) {
+          padding-left: 0;
+          border-left: none;
+        }
+        .m-dish-row {
+          padding-right: 0;
+        }
+        .m-dish-row:hover {
+          transform: translateX(3px);
+        }
+        .m-dish-row:nth-child(even):hover {
+          transform: translateX(3px);
+        }
+        .veg-strip-sep {
+          display: none;
+        }
+      }
+      @media (max-width: 480px) {
+        .menu-hero {
+          height: 60vh;
+        }
+        .menu-cta-section {
+          padding: 5rem 5%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ======================================================
   NAV (unchanged from v2 branding)
 ====================================================== -->
-<nav class="site-nav" id="siteNav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo" aria-label="Shiv Caterers — Home">
-      <div class="logo-mark">
-        <svg viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
-          <rect width="38" height="38" rx="4" fill="#3A0808"/>
-          <rect x="6" y="5" width="26" height="1.2" fill="#C6A15B"/>
-          <text x="19" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="600" fill="#C8A84A" letter-spacing="-0.5">SC</text>
-          <rect x="6" y="31.8" width="26" height="1.2" fill="#C6A15B"/>
-        </svg>
+    <nav class="site-nav" id="siteNav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Shiv Caterers — Home">
+          <div class="logo-mark">
+            <svg viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+              <rect width="38" height="38" rx="4" fill="#142045" />
+              <rect x="6" y="5" width="26" height="1.2" fill="#C6A15B" />
+              <text
+                x="19"
+                y="26"
+                text-anchor="middle"
+                font-family="Georgia,serif"
+                font-size="16"
+                font-weight="600"
+                fill="#E6D3A7"
+                letter-spacing="-0.5"
+              >
+                SC
+              </text>
+              <rect x="6" y="31.8" width="26" height="1.2" fill="#C6A15B" />
+            </svg>
+          </div>
+          <div>
+            <span class="logo-name">Shiv Caterers</span>
+            <span class="logo-sub">Pure Vegetarian</span>
+          </div>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html" class="active">Menu</a>
+          <a href="customize-menu.html">Customize</a>
+          <a href="contact.html">Contact</a>
+          <a href="tel:+919130192121" class="nav-cta">Call Now</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div>
-        <span class="logo-name">Shiv Caterers</span>
-        <span class="logo-sub">Pure Vegetarian</span>
-      </div>
-    </a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="menu.html" class="active">Menu</a>
-      <a href="customize-menu.html">Customize</a>
-      <a href="contact.html">Contact</a>
-      <a href="tel:+919130192121" class="nav-cta">Call Now</a>
+      <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html" class="active">Full Menu</a>
+        <a href="customize-menu.html">Customize Menu</a>
+        <a href="contact.html">Contact</a>
+        <div class="nav-mobile-footer">
+          <a
+            href="https://wa.me/919130192121"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-wa"
+            style="width: 100%; justify-content: center"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              style="width: 15px; height: 15px"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            WhatsApp Inquiry
+          </a>
+        </div>
+      </nav>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="menu.html" class="active">Full Menu</a>
-    <a href="customize-menu.html">Customize Menu</a>
-    <a href="contact.html">Contact</a>
-    <div class="nav-mobile-footer">
-      <a href="https://wa.me/919130192121" target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;justify-content:center;">
-        <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        WhatsApp Inquiry
-      </a>
-    </div>
-  </nav>
-</nav>
- 
-<!-- ======================================================
+
+    <!-- ======================================================
   1. HERO SECTION
 ====================================================== -->
-<section class="menu-hero" aria-label="Menu hero">
-  <div class="menu-hero__bg">
-    <img
-      src="images/event-buffet.jpg"
-      alt="Shiv Caterers premium buffet setup with gleaming golden chafing dishes at an event"
-      loading="eager"
-      fetchpriority="high"
-    />
-    <div class="menu-hero__overlay"></div>
-  </div>
-  <div class="menu-hero__content">
-    <div class="menu-hero__eyebrow">Our Complete Menu</div>
-    <h1 class="menu-hero__title">
-      A Feast Crafted for<br><em>Every Celebration</em>
-    </h1>
-    <p class="menu-hero__sub">
-      From traditional Maharashtrian favourites to premium wedding spreads — a curated 150+ dish vegetarian menu designed for unforgettable gatherings across Pune.
-    </p>
-    <div class="menu-hero__scroll" aria-hidden="true">
-      <div class="menu-hero__scroll-line"></div>
-      <span>Explore Menu</span>
-      <div class="menu-hero__scroll-line"></div>
-    </div>
-  </div>
-</section>
- 
-<!-- ======================================================
+    <section class="menu-hero" aria-label="Menu hero">
+      <div class="menu-hero__bg">
+        <img
+          src="images/event-buffet.jpg"
+          alt="Shiv Caterers premium buffet setup with gleaming golden chafing dishes at an event"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="menu-hero__overlay"></div>
+      </div>
+      <div class="menu-hero__content">
+        <div class="menu-hero__eyebrow">Our Complete Menu</div>
+        <h1 class="menu-hero__title">
+          A Feast Crafted for<br /><em>Every Celebration</em>
+        </h1>
+        <p class="menu-hero__sub">
+          From traditional Maharashtrian favourites to premium wedding spreads —
+          a curated 150+ dish vegetarian menu designed for unforgettable
+          gatherings across Pune.
+        </p>
+        <div class="menu-hero__scroll" aria-hidden="true">
+          <div class="menu-hero__scroll-line"></div>
+          <span>Explore Menu</span>
+          <div class="menu-hero__scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
   2. STICKY CATEGORY NAVIGATION
 ====================================================== -->
-<nav class="menu-cat-nav" id="menuCatNav" aria-label="Menu categories">
-  <div class="menu-cat-nav-inner" id="catNavInner">
-    <!-- Built dynamically by JS -->
-  </div>
-</nav>
- 
-<!-- ======================================================
+    <nav class="menu-cat-nav" id="menuCatNav" aria-label="Menu categories">
+      <div class="menu-cat-nav-inner" id="catNavInner">
+        <!-- Built dynamically by JS -->
+      </div>
+    </nav>
+
+    <!-- ======================================================
   3. PURE VEG ASSURANCE STRIP
 ====================================================== -->
-<div class="veg-strip" role="note" aria-label="Pure vegetarian assurance">
-  <div class="veg-strip-inner">
-    <div class="veg-strip-item">
-      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg>
-      100% Pure Vegetarian Catering
+    <div class="veg-strip" role="note" aria-label="Pure vegetarian assurance">
+      <div class="veg-strip-inner">
+        <div class="veg-strip-item">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <polyline points="9,12 11,14 15,10" />
+          </svg>
+          100% Pure Vegetarian Catering
+        </div>
+        <div class="veg-strip-sep"></div>
+        <div class="veg-strip-item">
+          <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12" /></svg>
+          Fresh Salad, Papad &amp; Pickle included in every catering order
+        </div>
+        <div class="veg-strip-sep"></div>
+        <div class="veg-strip-note">
+          Items marked
+          <strong style="color: var(--gold)">Chef's Special</strong> are premium
+          selections — pricing on request
+        </div>
+      </div>
     </div>
-    <div class="veg-strip-sep"></div>
-    <div class="veg-strip-item">
-      <svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>
-      Fresh Salad, Papad &amp; Pickle included in every catering order
-    </div>
-    <div class="veg-strip-sep"></div>
-    <div class="veg-strip-note">
-      Items marked <strong style="color:var(--gold);">Chef's Special</strong> are premium selections — pricing on request
-    </div>
-  </div>
-</div>
- 
-<!-- ======================================================
+
+    <!-- ======================================================
   4. MENU SECTIONS — Rendered by JavaScript
 ====================================================== -->
-<main class="menu-main" id="menuMain" aria-label="Menu categories"></main>
- 
-<!-- ======================================================
+    <main class="menu-main" id="menuMain" aria-label="Menu categories"></main>
+
+    <!-- ======================================================
   5. BOTTOM CTA SECTION
 ====================================================== -->
-<section class="menu-cta-section" aria-labelledby="cta-heading">
-  <div class="menu-cta-inner">
-    <div class="menu-cta-eyebrow">Plan Your Event</div>
-    <h2 class="menu-cta-h2" id="cta-heading">Ready to Plan Your Perfect Menu?</h2>
-    <p class="menu-cta-p">
-      Customize your catering menu from 150+ dishes and receive a personalized quote for your celebration — delivered directly on WhatsApp.
-    </p>
-    <div class="menu-cta-btns">
-      <a href="customize-menu.html" class="btn btn-primary" style="background:var(--gold);border-color:var(--gold);color:var(--wine-deep);">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-        Customize My Menu
-      </a>
-      <a href="https://wa.me/919130192121?text=Hello%20Shiv%20Caterers%2C%20I%20would%20like%20to%20inquire%20about%20catering%20menu%20and%20pricing." class="btn btn-wa" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        WhatsApp Inquiry
-      </a>
-      <a href="contact.html" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.3);">View Packages</a>
-    </div>
-  </div>
-</section>
- 
-<!-- ======================================================
+    <section class="menu-cta-section" aria-labelledby="cta-heading">
+      <div class="menu-cta-inner">
+        <div class="menu-cta-eyebrow">Plan Your Event</div>
+        <h2 class="menu-cta-h2" id="cta-heading">
+          Ready to Plan Your Perfect Menu?
+        </h2>
+        <p class="menu-cta-p">
+          Customize your catering menu from 150+ dishes and receive a
+          personalized quote for your celebration — delivered directly on
+          WhatsApp.
+        </p>
+        <div class="menu-cta-btns">
+          <a
+            href="customize-menu.html"
+            class="btn btn-primary"
+            style="
+              background: var(--gold);
+              border-color: var(--gold);
+              color: var(--wine-deep);
+            "
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
+              <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
+            </svg>
+            Customize My Menu
+          </a>
+          <a
+            href="https://wa.me/919130192121?text=Hello%20Shiv%20Caterers%2C%20I%20would%20like%20to%20inquire%20about%20catering%20menu%20and%20pricing."
+            class="btn btn-wa"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            WhatsApp Inquiry
+          </a>
+          <a
+            href="contact.html"
+            class="btn btn-ghost"
+            style="border-color: rgba(255, 255, 255, 0.3)"
+            >View Packages</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
   FOOTER
 ====================================================== -->
-<footer class="footer-simple site-footer" role="contentinfo">
-  <div>
-    <div class="footer-simple-name">Shiv Caterers</div>
-    <div class="footer-simple-sub">Kashiram Supekar &nbsp;·&nbsp; Pure Veg Catering &nbsp;·&nbsp; Pune</div>
-  </div>
-  <nav class="footer-simple-nav" aria-label="Footer navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="menu.html">Menu</a>
-    <a href="customize-menu.html">Customize</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="footer-simple-copy">© 2026 Shiv Caterers. All rights reserved.</div>
-</footer>
- 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/919130192121" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
- 
-<!-- Scripts -->
-<script src="script.js"></script>
-<script src="menu-data.js"></script>
-<script>
-/* ============================================================
+    <footer class="footer-simple site-footer" role="contentinfo">
+      <div>
+        <div class="footer-simple-name">Shiv Caterers</div>
+        <div class="footer-simple-sub">
+          Kashiram Supekar &nbsp;·&nbsp; Pure Veg Catering &nbsp;·&nbsp; Pune
+        </div>
+      </div>
+      <nav class="footer-simple-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="customize-menu.html">Customize</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-simple-copy">
+        © 2026 Shiv Caterers. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a
+      href="https://wa.me/919130192121"
+      class="wa-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="menu-data.js"></script>
+    <script>
+      /* ============================================================
    MENU PAGE — Rendering & Interaction JS
    ============================================================ */
-(function () {
-  'use strict';
- 
-  /* ── Category subtitles (premium hospitality copy) ── */
-  var SUBTITLES = {
-    'welcome-drinks':  'Refreshing cold drinks to greet your guests in style',
-    'hot-drinks':      'Warm beverages served with care',
-    'soups':           'Comforting broths and wholesome Indian soups',
-    'starters':        'Crispy, flavourful first impressions',
-    'paneer-dishes':   'Rich, aromatic Indian cottage cheese curries',
-    'dry-veg':         'Lightly spiced vegetable preparations',
-    'dal':             'Slow-cooked lentil preparations from across India',
-    'bhaji-fritters':  'Classic Indian fried accompaniments',
-    'rice':            'Fragrant rice and pulav preparations',
-    'roti':            'Freshly made breads from the tawa and tandoor',
-    'sweets':          'Traditional Indian mithai and festive desserts',
-    'chutney':         'Fresh chutneys and artisan condiments',
-    'common':          'Standard accompaniments served with every meal',
-    'salads-raita':    'Fresh salads and cooling yoghurt preparations',
-    'breakfast':       'Light and wholesome morning meal options',
-    'chinese':         'Indo-Chinese preparations for a diverse spread',
-    'chaat':           'Mumbai-inspired street food counter',
-    'fasting':         'Pure satvik preparations for fasting occasions',
-    'fruit-stall':     'Seasonal fresh fruit selections',
-    'light-meals':     'Popular street-food meal options',
-    'mukhavas':        'Traditional digestives to close the meal',
-    'ice-cream':       'Cool, creamy frozen finales'
-  };
- 
-  /* ── SVG icon paths per category ── */
-  var ICONS = {
-    'welcome-drinks': '<path d="M17 8C8 10 5.9 16.17 3.82 22"/><path d="M9.1 8c.6 2.4 0 4.7-1.1 6.5"/><path d="M20 22c-1.68-2.51-1.71-5.66-.56-9"/>',
-    'hot-drinks':     '<path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>',
-    'soups':          '<path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/>',
-    'starters':       '<path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>',
-    'paneer-dishes':  '<path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>',
-    'dry-veg':        '<path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v8"/><path d="M8 12h8"/>',
-    'dal':            '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>',
-    'bhaji-fritters': '<circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>',
-    'rice':           '<path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>',
-    'roti':           '<circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="12" y1="8" x2="12" y2="16"/>',
-    'sweets':         '<path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/>',
-    'chutney':        '<path d="M3 11l19-9-9 19-2-8-8-2z"/>',
-    'common':         '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>',
-    'salads-raita':   '<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>',
-    'breakfast':      '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
-    'chinese':        '<path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/><line x1="12" y1="11" x2="12" y2="21"/><line x1="9" y1="16" x2="23" y2="16"/>',
-    'chaat':          '<path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M7 10l5 5 5-5"/>',
-    'fasting':        '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
-    'fruit-stall':    '<circle cx="12" cy="12" r="10"/><path d="M12 8c-1.5 0-3 1-3 4s1.5 4 3 4 3-1 3-4-1.5-4-3-4z"/>',
-    'light-meals':    '<path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/>',
-    'mukhavas':       '<path d="M17 8C8 10 5.9 16.17 3.82 22"/><path d="M20 22c-1.68-2.51-1.71-5.66-.56-9"/><circle cx="19" cy="4" r="2"/>',
-    'ice-cream':      '<path d="M12 2C8.5 2 7 5 7 7c0 2.5 1.5 4 3 5v10h4V12c1.5-1 3-2.5 3-5 0-2-1.5-5-5-5z"/><line x1="10" y1="16" x2="14" y2="16"/>'
-  };
- 
-  /* ── Nav config: display label for each category ── */
-  var NAV_LABELS = {
-    'welcome-drinks': 'Drinks',
-    'hot-drinks':     'Hot Drinks',
-    'soups':          'Soups',
-    'starters':       'Starters',
-    'paneer-dishes':  'Paneer',
-    'dry-veg':        'Veg Dishes',
-    'dal':            'Dal',
-    'bhaji-fritters': 'Fritters',
-    'rice':           'Rice',
-    'roti':           'Roti',
-    'sweets':         'Sweets',
-    'chutney':        'Chutneys',
-    'common':         'Common',
-    'salads-raita':   'Salads',
-    'breakfast':      'Breakfast',
-    'chinese':        'Chinese',
-    'chaat':          'Chaat',
-    'fasting':        'Fasting',
-    'fruit-stall':    'Fruits',
-    'light-meals':    'Light Meals',
-    'mukhavas':       'Mukhavas',
-    'ice-cream':      'Ice Cream'
-  };
- 
-  var menuMain  = document.getElementById('menuMain');
-  var catNavInner = document.getElementById('catNavInner');
- 
-  if (!menuMain || typeof SHIV_MENU === 'undefined') return;
- 
-  /* ── 1. Build sticky category nav ── */
-  function buildCategoryNav() {
-    if (!catNavInner) return;
-    var html = '';
-    SHIV_MENU.forEach(function (cat) {
-      var label = NAV_LABELS[cat.id] || cat.name;
-      html +=
-        '<a href="#section-' + cat.id + '" class="cat-nav-link" data-target="' + cat.id + '">' +
-          esc(label) +
-        '</a>';
-    });
-    catNavInner.innerHTML = html;
- 
-    /* Smooth scroll with offset */
-    catNavInner.querySelectorAll('.cat-nav-link').forEach(function (link) {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        var target = document.getElementById('section-' + this.dataset.target);
-        if (!target) return;
-        var navH   = 70;  /* site nav */
-        var catH   = document.getElementById('menuCatNav').offsetHeight || 44;
-        var offset = navH + catH + 8;
-        var top    = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top: top, behavior: 'smooth' });
-      });
-    });
-  }
- 
-  /* ── 2. Render all category sections ── */
-  function renderMenuSections() {
-    var html = '';
-    SHIV_MENU.forEach(function (cat) {
-      var icon     = ICONS[cat.id] || '<circle cx="12" cy="12" r="10"/>';
-      var subtitle = SUBTITLES[cat.id] || '';
- 
-      /* Split items into standard and premium */
-      var itemsHtml = '';
-      cat.items.forEach(function (item) {
-        var isPremium = item.indexOf('★') !== -1;
-        var display   = item.replace(' ★', '');
-        itemsHtml +=
-          '<div class="m-dish-row' + (isPremium ? ' premium' : '') + '">' +
-            '<div class="m-dish-dot"></div>' +
-            '<span class="m-dish-name">' + esc(display) + '</span>' +
-            (isPremium ? '<span class="m-dish-special">Chef\'s Special</span>' : '') +
-          '</div>';
-      });
- 
-      /* If odd count, add a filler for the grid */
-      if (cat.items.length % 2 !== 0) {
-        itemsHtml += '<div class="m-dish-row m-dish-filler" aria-hidden="true"></div>';
-      }
- 
-      html +=
-        '<section class="m-section" id="section-' + cat.id + '" aria-labelledby="cat-title-' + cat.id + '">' +
-          '<div class="m-section-inner">' +
- 
-            '<header class="m-section-head">' +
- 
-              '<div class="m-cat-circle" aria-hidden="true">' +
-                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round">' +
-                  icon +
-                '</svg>' +
-              '</div>' +
- 
-              '<div class="m-cat-meta">' +
-                '<h2 class="m-cat-name" id="cat-title-' + cat.id + '">' + esc(cat.name) + '</h2>' +
-                (subtitle ? '<p class="m-cat-subtitle">' + esc(subtitle) + '</p>' : '') +
-              '</div>' +
- 
-              '<div class="m-cat-badges">' +
-                '<span class="m-cat-count">' + cat.items.length + ' items</span>' +
-                (cat.premium ? '<span class="m-cat-premium-tag">Premium</span>' : '') +
-              '</div>' +
- 
-            '</header>' +
- 
-            '<div class="m-dishes-grid" role="list">' +
-              itemsHtml +
-            '</div>' +
- 
-          '</div>' +
-        '</section>';
-    });
- 
-    menuMain.innerHTML = html;
-  }
- 
-  /* ── 3. Scrollspy — highlight active nav link ── */
-  function initScrollSpy() {
-    if (!('IntersectionObserver' in window)) return;
- 
-    var links = {};
-    catNavInner.querySelectorAll('.cat-nav-link').forEach(function (link) {
-      links[link.dataset.target] = link;
-    });
- 
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        var id = entry.target.id.replace('section-', '');
-        /* Remove all active states */
-        Object.values(links).forEach(function (l) { l.classList.remove('active'); });
-        /* Set active */
-        if (links[id]) {
-          links[id].classList.add('active');
-          /* Scroll nav link into view */
-          scrollNavLinkIntoView(links[id]);
+      (function () {
+        "use strict";
+
+        /* ── Category subtitles (premium hospitality copy) ── */
+        var SUBTITLES = {
+          "welcome-drinks":
+            "Refreshing cold drinks to greet your guests in style",
+          "hot-drinks": "Warm beverages served with care",
+          soups: "Comforting broths and wholesome Indian soups",
+          starters: "Crispy, flavourful first impressions",
+          "paneer-dishes": "Rich, aromatic Indian cottage cheese curries",
+          "dry-veg": "Lightly spiced vegetable preparations",
+          dal: "Slow-cooked lentil preparations from across India",
+          "bhaji-fritters": "Classic Indian fried accompaniments",
+          rice: "Fragrant rice and pulav preparations",
+          roti: "Freshly made breads from the tawa and tandoor",
+          sweets: "Traditional Indian mithai and festive desserts",
+          chutney: "Fresh chutneys and artisan condiments",
+          common: "Standard accompaniments served with every meal",
+          "salads-raita": "Fresh salads and cooling yoghurt preparations",
+          breakfast: "Light and wholesome morning meal options",
+          chinese: "Indo-Chinese preparations for a diverse spread",
+          chaat: "Mumbai-inspired street food counter",
+          fasting: "Pure satvik preparations for fasting occasions",
+          "fruit-stall": "Seasonal fresh fruit selections",
+          "light-meals": "Popular street-food meal options",
+          mukhavas: "Traditional digestives to close the meal",
+          "ice-cream": "Cool, creamy frozen finales",
+        };
+
+        /* ── SVG icon paths per category ── */
+        var ICONS = {
+          "welcome-drinks":
+            '<path d="M17 8C8 10 5.9 16.17 3.82 22"/><path d="M9.1 8c.6 2.4 0 4.7-1.1 6.5"/><path d="M20 22c-1.68-2.51-1.71-5.66-.56-9"/>',
+          "hot-drinks":
+            '<path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>',
+          soups:
+            '<path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/>',
+          starters:
+            '<path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>',
+          "paneer-dishes":
+            '<path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>',
+          "dry-veg":
+            '<path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v8"/><path d="M8 12h8"/>',
+          dal: '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>',
+          "bhaji-fritters":
+            '<circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>',
+          rice: '<path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>',
+          roti: '<circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="12" y1="8" x2="12" y2="16"/>',
+          sweets:
+            '<path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/>',
+          chutney: '<path d="M3 11l19-9-9 19-2-8-8-2z"/>',
+          common:
+            '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>',
+          "salads-raita":
+            '<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>',
+          breakfast: '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+          chinese:
+            '<path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/><line x1="12" y1="11" x2="12" y2="21"/><line x1="9" y1="16" x2="23" y2="16"/>',
+          chaat:
+            '<path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M7 10l5 5 5-5"/>',
+          fasting: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+          "fruit-stall":
+            '<circle cx="12" cy="12" r="10"/><path d="M12 8c-1.5 0-3 1-3 4s1.5 4 3 4 3-1 3-4-1.5-4-3-4z"/>',
+          "light-meals":
+            '<path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/>',
+          mukhavas:
+            '<path d="M17 8C8 10 5.9 16.17 3.82 22"/><path d="M20 22c-1.68-2.51-1.71-5.66-.56-9"/><circle cx="19" cy="4" r="2"/>',
+          "ice-cream":
+            '<path d="M12 2C8.5 2 7 5 7 7c0 2.5 1.5 4 3 5v10h4V12c1.5-1 3-2.5 3-5 0-2-1.5-5-5-5z"/><line x1="10" y1="16" x2="14" y2="16"/>',
+        };
+
+        /* ── Nav config: display label for each category ── */
+        var NAV_LABELS = {
+          "welcome-drinks": "Drinks",
+          "hot-drinks": "Hot Drinks",
+          soups: "Soups",
+          starters: "Starters",
+          "paneer-dishes": "Paneer",
+          "dry-veg": "Veg Dishes",
+          dal: "Dal",
+          "bhaji-fritters": "Fritters",
+          rice: "Rice",
+          roti: "Roti",
+          sweets: "Sweets",
+          chutney: "Chutneys",
+          common: "Common",
+          "salads-raita": "Salads",
+          breakfast: "Breakfast",
+          chinese: "Chinese",
+          chaat: "Chaat",
+          fasting: "Fasting",
+          "fruit-stall": "Fruits",
+          "light-meals": "Light Meals",
+          mukhavas: "Mukhavas",
+          "ice-cream": "Ice Cream",
+        };
+
+        var menuMain = document.getElementById("menuMain");
+        var catNavInner = document.getElementById("catNavInner");
+
+        if (!menuMain || typeof SHIV_MENU === "undefined") return;
+
+        /* ── 1. Build sticky category nav ── */
+        function buildCategoryNav() {
+          if (!catNavInner) return;
+          var html = "";
+          SHIV_MENU.forEach(function (cat) {
+            var label = NAV_LABELS[cat.id] || cat.name;
+            html +=
+              '<a href="#section-' +
+              cat.id +
+              '" class="cat-nav-link" data-target="' +
+              cat.id +
+              '">' +
+              esc(label) +
+              "</a>";
+          });
+          catNavInner.innerHTML = html;
+
+          /* Smooth scroll with offset */
+          catNavInner
+            .querySelectorAll(".cat-nav-link")
+            .forEach(function (link) {
+              link.addEventListener("click", function (e) {
+                e.preventDefault();
+                var target = document.getElementById(
+                  "section-" + this.dataset.target,
+                );
+                if (!target) return;
+                var navH = 70; /* site nav */
+                var catH =
+                  document.getElementById("menuCatNav").offsetHeight || 44;
+                var offset = navH + catH + 8;
+                var top =
+                  target.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top: top, behavior: "smooth" });
+              });
+            });
         }
-      });
-    }, {
-      rootMargin: '-25% 0px -65% 0px',
-      threshold:  0
-    });
- 
-    document.querySelectorAll('.m-section').forEach(function (section) {
-      observer.observe(section);
-    });
-  }
- 
-  /* Keep active nav link visible inside horizontal nav */
-  function scrollNavLinkIntoView(link) {
-    var nav = document.getElementById('menuCatNav');
-    if (!nav || !link) return;
-    var linkLeft   = link.offsetLeft;
-    var linkWidth  = link.offsetWidth;
-    var navWidth   = nav.offsetWidth;
-    var scrollLeft = nav.scrollLeft;
-    if (linkLeft < scrollLeft + 20) {
-      nav.scrollTo({ left: linkLeft - 20, behavior: 'smooth' });
-    } else if (linkLeft + linkWidth > scrollLeft + navWidth - 20) {
-      nav.scrollTo({ left: linkLeft + linkWidth - navWidth + 20, behavior: 'smooth' });
-    }
-  }
- 
-  /* ── Utility: safe HTML escaping ── */
-  function esc(str) {
-    var d = document.createElement('div');
-    d.textContent = str;
-    return d.innerHTML;
-  }
- 
-  /* ── Init ── */
-  buildCategoryNav();
-  renderMenuSections();
-  initScrollSpy();
- 
-})();
-</script>
-</body>
+
+        /* ── 2. Render all category sections ── */
+        function renderMenuSections() {
+          var html = "";
+          SHIV_MENU.forEach(function (cat) {
+            var icon = ICONS[cat.id] || '<circle cx="12" cy="12" r="10"/>';
+            var subtitle = SUBTITLES[cat.id] || "";
+
+            /* Split items into standard and premium */
+            var itemsHtml = "";
+            cat.items.forEach(function (item) {
+              var isPremium = item.indexOf("★") !== -1;
+              var display = item.replace(" ★", "");
+              itemsHtml +=
+                '<div class="m-dish-row' +
+                (isPremium ? " premium" : "") +
+                '">' +
+                '<div class="m-dish-dot"></div>' +
+                '<span class="m-dish-name">' +
+                esc(display) +
+                "</span>" +
+                (isPremium
+                  ? '<span class="m-dish-special">Chef\'s Special</span>'
+                  : "") +
+                "</div>";
+            });
+
+            /* If odd count, add a filler for the grid */
+            if (cat.items.length % 2 !== 0) {
+              itemsHtml +=
+                '<div class="m-dish-row m-dish-filler" aria-hidden="true"></div>';
+            }
+
+            html +=
+              '<section class="m-section" id="section-' +
+              cat.id +
+              '" aria-labelledby="cat-title-' +
+              cat.id +
+              '">' +
+              '<div class="m-section-inner">' +
+              '<header class="m-section-head">' +
+              '<div class="m-cat-circle" aria-hidden="true">' +
+              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round">' +
+              icon +
+              "</svg>" +
+              "</div>" +
+              '<div class="m-cat-meta">' +
+              '<h2 class="m-cat-name" id="cat-title-' +
+              cat.id +
+              '">' +
+              esc(cat.name) +
+              "</h2>" +
+              (subtitle
+                ? '<p class="m-cat-subtitle">' + esc(subtitle) + "</p>"
+                : "") +
+              "</div>" +
+              '<div class="m-cat-badges">' +
+              '<span class="m-cat-count">' +
+              cat.items.length +
+              " items</span>" +
+              (cat.premium
+                ? '<span class="m-cat-premium-tag">Premium</span>'
+                : "") +
+              "</div>" +
+              "</header>" +
+              '<div class="m-dishes-grid" role="list">' +
+              itemsHtml +
+              "</div>" +
+              "</div>" +
+              "</section>";
+          });
+
+          menuMain.innerHTML = html;
+        }
+
+        /* ── 3. Scrollspy — highlight active nav link ── */
+        function initScrollSpy() {
+          if (!("IntersectionObserver" in window)) return;
+
+          var links = {};
+          catNavInner
+            .querySelectorAll(".cat-nav-link")
+            .forEach(function (link) {
+              links[link.dataset.target] = link;
+            });
+
+          var observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                var id = entry.target.id.replace("section-", "");
+                /* Remove all active states */
+                Object.values(links).forEach(function (l) {
+                  l.classList.remove("active");
+                });
+                /* Set active */
+                if (links[id]) {
+                  links[id].classList.add("active");
+                  /* Scroll nav link into view */
+                  scrollNavLinkIntoView(links[id]);
+                }
+              });
+            },
+            {
+              rootMargin: "-25% 0px -65% 0px",
+              threshold: 0,
+            },
+          );
+
+          document.querySelectorAll(".m-section").forEach(function (section) {
+            observer.observe(section);
+          });
+        }
+
+        /* Keep active nav link visible inside horizontal nav */
+        function scrollNavLinkIntoView(link) {
+          var nav = document.getElementById("menuCatNav");
+          if (!nav || !link) return;
+          var linkLeft = link.offsetLeft;
+          var linkWidth = link.offsetWidth;
+          var navWidth = nav.offsetWidth;
+          var scrollLeft = nav.scrollLeft;
+          if (linkLeft < scrollLeft + 20) {
+            nav.scrollTo({ left: linkLeft - 20, behavior: "smooth" });
+          } else if (linkLeft + linkWidth > scrollLeft + navWidth - 20) {
+            nav.scrollTo({
+              left: linkLeft + linkWidth - navWidth + 20,
+              behavior: "smooth",
+            });
+          }
+        }
+
+        /* ── Utility: safe HTML escaping ── */
+        function esc(str) {
+          var d = document.createElement("div");
+          d.textContent = str;
+          return d.innerHTML;
+        }
+
+        /* ── Init ── */
+        buildCategoryNav();
+        renderMenuSections();
+        initScrollSpy();
+      })();
+    </script>
+  </body>
 </html>
