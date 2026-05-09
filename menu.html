@@ -288,14 +288,14 @@
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        box-shadow: 0 4px 18px rgba(168, 124, 42, 0.18);
+        box-shadow: 0 8px 28px rgba(20, 32, 69, 0.12);
         transition:
           transform var(--t),
           box-shadow var(--t);
       }
       .m-cat-circle:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(168, 124, 42, 0.28);
+        box-shadow: 0 14px 38px rgba(20, 32, 69, 0.18);
       }
       .m-cat-circle svg {
         width: 28px;
@@ -377,9 +377,11 @@
       }
       .m-dish-row:hover {
         transform: translateX(4px);
+        background: rgba(30, 42, 90, 0.03);
       }
       .m-dish-row:nth-child(even):hover {
         transform: translateX(-4px);
+        background: rgba(30, 42, 90, 0.03);
       }
       .m-dish-row:hover .m-dish-name {
         color: var(--wine-deep);
@@ -427,7 +429,12 @@
 
       /* ── BOTTOM CTA ── */
       .menu-cta-section {
-        background: var(--wine-deep);
+        background: linear-gradient(
+          135deg,
+          #0d183d 0%,
+          #142045 40%,
+          #1e2a5a 100%
+        );
         padding: 7rem 5%;
         text-align: center;
         position: relative;
@@ -439,7 +446,7 @@
         inset: 0;
         background: radial-gradient(
           ellipse at center,
-          rgba(168, 124, 42, 0.1) 0%,
+          rgba(198, 161, 91, 0.08) 0%,
           transparent 62%
         );
         pointer-events: none;
@@ -547,10 +554,14 @@
       @media (max-width: 480px) {
         .menu-hero {
           height: 60vh;
+          isolation: isolate;
         }
         .menu-cta-section {
           padding: 5rem 5%;
         }
+      }
+      .footer-simple {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
       }
     </style>
   </head>
@@ -720,11 +731,7 @@
           <a
             href="customize-menu.html"
             class="btn btn-primary"
-            style="
-              background: var(--gold);
-              border-color: var(--gold);
-              color: var(--wine-deep);
-            "
+            style="background: #c6a15b; border-color: #c6a15b; color: #142045"
           >
             <svg
               viewBox="0 0 24 24"
