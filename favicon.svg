@@ -2,11 +2,11 @@
   <!-- Background -->
   <rect width="64" height="64" rx="6" fill="#142045"/>
   <!-- Top gold rule -->
-  <rect x="10" y="8" width="44" height="1.5" fill="#A87C2A"/>
+  <rect x="10" y="8" width="44" height="1.5" fill="#C6A15B"/>
   <!-- SC Monogram -->
-  <text x="32" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="600" fill="#D9BC84" letter-spacing="-1">SC</text>
+  <text x="32" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="600" fill="#E6D3A7" letter-spacing="-1">SC</text>
   <!-- Bottom gold rule -->
-  <rect x="10" y="54.5" width="44" height="1.5" fill="#A87C2A"/>
+  <rect x="10" y="54.5" width="44" height="1.5" fill="#C6A15B"/>
   <!-- Pure Veg green dot -->
   <circle cx="32" cy="60" r="0" fill="#2A5E2A"/>
 </svg>
