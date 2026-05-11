@@ -297,15 +297,21 @@
         transform: translateY(-2px);
         box-shadow: 0 14px 38px rgba(20, 32, 69, 0.18);
       }
-      .m-cat-circle svg {
-        width: 28px;
-        height: 28px;
-        stroke: var(--wine);
-        fill: none;
-        stroke-width: 1.55;
-        stroke-linecap: round;
-        stroke-linejoin: round;
+      .m-cat-circle img {
+        transition: transform 0.5s ease;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
       }
+      .m-cat-circle {
+        overflow: hidden;
+        position: relative;
+      }
+      .m-cat-circle:hover img {
+        transform: scale(1.08);
+      }
+
       .m-cat-meta {
         flex: 1;
         min-width: 0;
@@ -957,7 +963,7 @@
         function renderMenuSections() {
           var html = "";
           SHIV_MENU.forEach(function (cat) {
-            var icon = ICONS[cat.id] || '<circle cx="12" cy="12" r="10"/>';
+            var image = cat.image || "";
             var subtitle = SUBTITLES[cat.id] || "";
 
             /* Split items into standard and premium */
@@ -994,9 +1000,11 @@
               '<div class="m-section-inner">' +
               '<header class="m-section-head">' +
               '<div class="m-cat-circle" aria-hidden="true">' +
-              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round">' +
-              icon +
-              "</svg>" +
+              '<img src="' +
+              image +
+              '" alt="' +
+              esc(cat.name) +
+              '">' +
               "</div>" +
               '<div class="m-cat-meta">' +
               '<h2 class="m-cat-name" id="cat-title-' +
