@@ -252,6 +252,32 @@ linear-gradient(
 .trust-sep { width: 1px; height: 14px; background: var(--cream-3); }
 
 /* ── FLOATING WHATSAPP ── */
+.call-float {
+  position: fixed;
+  right: 22px;
+  bottom: 96px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #142045;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(20,32,69,0.28);
+  z-index: 999;
+  transition: all 0.28s ease;
+}
+
+.call-float:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: #1E2A5A;
+}
+
+.call-float svg {
+  width: 24px;
+  height: 24px;
+}
 .wa-float {
   position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 998;
   width: 52px; height: 52px; border-radius: 50%;
